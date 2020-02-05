@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+body{
+    height: calc(100vh );  
+    padding: 0;
+    color: rgba(255, 255, 255, 0.75);
+    font-family: "Montserrat", monospace;
+    background-color: rgb(25, 25, 25);
+}
+.php_body div img{
+
+    display: inline-block;
+    padding: 50px;
+   
+
+
+}
+.php_img{
+
+    background-color:red;
+    
+   
+}
+img{
+
+    width: 30%;
+
+}
+.php_menu ul h1 h2{
+
+    padding: 10px;
+}
+.php_menu{
+    position: fixed;
+    
+    
+    top:20%;
+    left: 50%;
+    background-color:blue;
+
+}

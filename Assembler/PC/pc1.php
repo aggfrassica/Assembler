@@ -7,6 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./../css/navbar.css">
+        <link rel="stylesheet" href="./../css/php_style.css">
         <link rel="stylesheet" href="./css/scroll.css">
         <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css">
         <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css">
@@ -24,6 +25,30 @@
         
         
         ?>
+        <div class="php_body">
+        
+        <img src="./../img/case2.jpg"></img>
+        
+
+
+        <div class="php_menu">
+
+        <h1>TITLE</h1>
+        <ul>
+        
+
+       
+          <li>RAM</li>
+          <li>HD</li>
+          <li>SCHEDAVIDEO</li>
+          <li>SCHEDAMADRE</li>
+          <li>OS</li>
+          <li>CASE</li>  
+
+        </ul>
+        <h2>PREZZO</h2>
+        </div>
+        </div>
     </body>
     
     
