@@ -8,7 +8,6 @@ body{
 }
 .php_body div img{
 
-    display: inline-block;
     padding: 50px;
    
 
@@ -21,20 +20,83 @@ body{
    
 }
 img{
+    top: 2%;
 
-    width: 30%;
+    position: relative;
+    width: 48vh;
+}
 
 }
 .php_menu ul h1 h2{
-
     padding: 10px;
 }
 .php_menu{
-    position: fixed;
-    
-    
-    top:20%;
-    left: 50%;
-    background-color:blue;
+    display: inline-block;
+    position: relative;    
+    left: 10%;
+    margin-top: 5vh;
+}
+li {
+    align-content: : center;
+    margin: 5px;
+    list-style-type: none;
+    padding-left: 5vh;
+    padding-top: 3vh;
+    transition-duration: 0.2s; 
+}
+li:hover{
+    color: orange;
+}
+h2{
+    padding-top: 4vh;
+    color:orange;
+}
+.case{
+}
+h1.price{
+    cursor: pointer;
+    font-size: 7vh;
+    padding-left: 2vh;
+    transition-duration: 0.4s; 
+}
+.price:hover{
+    color:orange;
+    opacity: 0.9;
+}
+.lorem{
 
+    position: relative;
+    top:10%;
+    padding: 22px;
+    border-style: solid;
+    border-color: orange;
+    border-radius: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.amzn,.ebay {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    color: #FFAE00;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 12px;
+    margin-top: 2vh;
+    background-color: #262626;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    transition-duration: 0.4s;
+}
+.amzn:hover,.ebay:hover{
+    background-color: orange;
+    color: #262626;
+}
+.amzn:focus,.ebay:focus{
+    outline: 0;
 }
