@@ -6,7 +6,7 @@
         <title>pc1</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./../css/navbar.css">
+         <link rel="stylesheet" href="./../css/navbar.css">
         <link rel="stylesheet" href="./../css/php_style.css">
         <link rel="stylesheet" href="./css/scroll.css">
         <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css">
@@ -27,7 +27,7 @@
         ?>
         <div class="php_body">
         
-        <img src="./../img/case2.jpg"></img>
+        <img class="case" src="./../img/case2.jpg"></img>
         
 
 
@@ -37,7 +37,6 @@
         <ul>
         
 
-       
           <li>RAM</li>
           <li>HD</li>
           <li>SCHEDAVIDEO</li>
@@ -47,8 +46,16 @@
 
         </ul>
         <h2>PREZZO</h2>
+        
+        <h1 class="price">999€</h1>
+        <input type="button" name="amzn" class="amzn" value="Compra con Amazon">
+        <input type="button" name="ebay" class="ebay" value="Compra con Ebay">
         </div>
         </div>
+        <div class="lorem">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla placerat suscipit velit, a dictum magna fringilla non. Sed dictum condimentum lectus non viverra. Nullam aliquet lectus felis, a dictum lectus elementum id. Nam ultricies metus a mi sagittis dapibus. Mauris vestibulum eget quam quis dapibus. In felis nibh, pharetra ut laoreet a, dignissim vitae elit. Nullam bibendum consectetur erat, id molestie neque vulputate vel. Curabitur dictum sed mi eu tempor. Integer ullamcorper laoreet vehicula. Vivamus feugiat lectus eget sapien laoreet porttitor. Mauris ut euismod libero. Aliquam congue, turpis in pellentesque ultrices, odio nibh fermentum elit, nec elementum sapien libero quis mi. Duis tristique luctus rhoncus. Aliquam et porttitor odio. Nulla porta metus a velit egestas, sit amet pellentesque metus placerat.
+        </div>
+
     </body>
     
     
