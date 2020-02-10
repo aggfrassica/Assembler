@@ -16,7 +16,13 @@
         <?php 
         
         include(__DIR__ .'/../php_Assembler/navbar.php');
+        include(__DIR__ .'/../php_Assembler/connection.php');
+
+        $query="SELECT * FROM `PC` WHERE id=3";
+
+        $data=$connection->query($query);
         
+        foreach($data as $row){
         
         ?>
         <div class="php_body">
@@ -27,29 +33,29 @@
 
         <div class="php_menu">
 
-        <h1>PC3</h1>
+        <h1><?php echo $row["title"]?></h1>
         <ul>
         
 
-          <li>RAM</li>
-          <li>HD</li>
-          <li>SCHEDAVIDEO</li>
-          <li>SCHEDAMADRE</li>
-          <li>OS</li>
-          <li>CASE</li>  
+        <li><?php echo $row["HD"]?></li>
+          <li><?php echo $row["RAM"]?></li> 
+          <li><?php echo $row["Motherboard"]?></li>
+          <li><?php echo $row["Video"]?></li>
+          <li><?php echo $row["OS"]?></li>
+          <li><?php echo $row["Case"]?></li>  
 
         </ul>
         <h2>PREZZO</h2>
         
-        <h1 class="price">999€</h1>
+        <h1 class="price"><?php echo $row["Prezzo"]."€"?></h1>
         <button class="amzn" >Compra con Amazon</button>
         <button class="ebay">Compra con Ebay</button>
         </div>
         </div>
         <div class="lorem">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla placerat suscipit velit, a dictum magna fringilla non. Sed dictum condimentum lectus non viverra. Nullam aliquet lectus felis, a dictum lectus elementum id. Nam ultricies metus a mi sagittis dapibus. Mauris vestibulum eget quam quis dapibus. In felis nibh, pharetra ut laoreet a, dignissim vitae elit. Nullam bibendum consectetur erat, id molestie neque vulputate vel. Curabitur dictum sed mi eu tempor. Integer ullamcorper laoreet vehicula. Vivamus feugiat lectus eget sapien laoreet porttitor. Mauris ut euismod libero. Aliquam congue, turpis in pellentesque ultrices, odio nibh fermentum elit, nec elementum sapien libero quis mi. Duis tristique luctus rhoncus. Aliquam et porttitor odio. Nulla porta metus a velit egestas, sit amet pellentesque metus placerat.
+        <?php echo $row["title"]?>
         </div>
-
+        <?php }?>
     </body>
     </body>
     
