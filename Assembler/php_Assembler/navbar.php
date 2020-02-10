@@ -5,7 +5,7 @@ echo '<header>
 <nav>
     <ul class="nav__links">
         <li class="vetrina"><a href="./../index.html" >Home</a></li>
-        <li class="assembla"><a href="#" >Assembla</a></li>
+        
        
    </ul>
 </nav>
