@@ -9,13 +9,13 @@
          <link rel="stylesheet" href="./../css/navbar.css">
         <link rel="stylesheet" href="./../css/php_style.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     
     <body>
        
         <?php 
         
-        include(__DIR__ .'/../php_Assembler/navbar.php');
         include(__DIR__ .'/../php_Assembler/connection.php');
 
         $query="SELECT * FROM `PC` WHERE id=1";
@@ -25,6 +25,29 @@
         foreach($data as $row){
         
         ?>
+        <!-- HTML PER LA NAVBAR -->
+    <div class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>  
+    </div>
+
+<!-- SCRIPT PER LA NAVBAR -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+        
         <div class="php_body">
         
         <img class="case" src="./../img/case2.jpg"></img>
