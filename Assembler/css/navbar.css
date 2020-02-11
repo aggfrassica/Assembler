@@ -141,7 +141,7 @@ body {
   margin: 0;
   overflow: hidden;
   z-index: 500;
-  background: rgb(25, 25, 25);
+  background: #0b032d;
 }
 
 .topnav a {
@@ -156,7 +156,7 @@ body {
 }
 
 .topnav a:hover {
-  background-color: #0088a9; /*  Usa questo colore */
+  background-color: #f67e7d; /*  Usa questo colore */
   color: black;
 }
 

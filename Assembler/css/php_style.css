@@ -1,3 +1,11 @@
+/*
+palette: 
+scuro   #0b032d 
+viola   #843b62
+salmone #f67e7d
+chiaro  #ffb997
+*/
+
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 body{
     margin: 0;
@@ -5,14 +13,10 @@ body{
     padding: 0;
     color: rgba(255, 255, 255, 0.75);
     font-family: "Montserrat", monospace;
-    background-color: rgb(25, 25, 25);
+    background-color: #0b032d;
 }
 .php_body div img{
-
-    padding: 50px;
-   
-
-
+    padding: 50px;  
 }
 img{
     top: 2%;
@@ -22,11 +26,13 @@ img{
     padding: 100px 0px;
 }
 h1{
-
-    color: blue;
     font-size:5vw;
     max-width: 500px;
     font-size: 1.7em;
+    transition-duration: 0.3s
+}
+h1:hover{
+    color: #f67e7d;
 }
 }
 .php_menu ul h1 h2{
@@ -35,7 +41,7 @@ h1{
 .php_menu{
     display: inline-block;
     position: relative;    
-    left: 10%;
+    left: 3%;
     margin-top: 5vh;
 }
 li {
@@ -47,11 +53,11 @@ li {
     transition-duration: 0.2s; 
 }
 li:hover{
-    color: #0088a9;
+    color: #f67e7d;
 }
 h2{
     padding-top: 4vh;
-    color:#0088a9;
+    color:#843b62;
 }
 .case{
 }
@@ -61,6 +67,9 @@ h1.price{
     padding-left: 2vh;
     transition-duration: 0.4s; 
 }
+.price:hover{
+    color: #f67e7d;
+}
 
 .lorem{
 
@@ -68,7 +77,7 @@ h1.price{
     top:10%;
     padding: 22px;
     border-style: solid;
-    border-color: #0088a9;
+    border-color: #f67e7d;
     border-radius: 15px;
     margin-left: 30px;
     margin-right: 30px;
@@ -77,24 +86,24 @@ h1.price{
 .amzn,.ebay {
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
-    border-radius: 0px;
-    color: #0088a9;
+    border-radius: 7px;
+    color: white;
     font-family: Open Sans;
     font-size: 18px;
     font-weight: 100;
     padding: 12px;
     margin-top: 2vh;
-    background-color: #262626;
+    background-color: #0b032d;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
     text-align: center;
-    border: none;
+    border: solid 2px #f67e7d;
     transition-duration: 0.4s;
 }
 .amzn:hover,.ebay:hover{
-    background-color: #0088a9;
-    color: rgba(255, 255, 255, 0.75);
+    background-color: #f67e7d;
+    color: #843b62;
 }
 .amzn:focus,.ebay:focus{
     outline: 0;
