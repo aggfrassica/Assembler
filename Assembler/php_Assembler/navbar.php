@@ -10,6 +10,7 @@ echo ' <div class="topnav" id="myTopnav">
 <a href="#about">About</a>  
 </div>
 
+
 <!-- SCRIPT PER LA NAVBAR -->
 <script>
 function myFunction() {

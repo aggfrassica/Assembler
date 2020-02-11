@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 body{
+    margin: 0;
     height: calc(100vh );  
     padding: 0;
     color: rgba(255, 255, 255, 0.75);
@@ -15,11 +16,18 @@ body{
 }
 img{
     top: 2%;
-
     position: relative;
     width: 48vh;
+    float: left;
+    padding: 100px 0px;
 }
+h1{
 
+    color: blue;
+    font-size:5vw;
+    max-width: 500px;
+    font-size: 1.7em;
+}
 }
 .php_menu ul h1 h2{
     padding: 10px;

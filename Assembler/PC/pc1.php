@@ -23,7 +23,7 @@
         $data=$connection->query($query); // esegue la query precedente
         
         foreach($data as $row){
-        
+       
         ?>
         
         
@@ -31,11 +31,9 @@
         
         <img class="case" src="./../img/case2.jpg"></img>
         
-
-
         <div class="php_menu">
             <!-- Carica titolo dal db -->
-        <h1><?php echo $row["title"]?></h1> 
+        <h1 class="titolo"><?php echo $row["title"]?></h1> 
         <ul>
         
           <li><?php echo $row["CPU"]?></li>  

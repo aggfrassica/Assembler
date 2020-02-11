@@ -134,7 +134,8 @@ body {
 	margin: 0;
 }
 .topnav {
-	position: -webkit-sticky; /* Safari */
+	width: 100%;
+  position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
   margin: 0;
@@ -144,13 +145,14 @@ body {
 }
 
 .topnav a {
-  float: left;
+  float: right;
   display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  transition-duration: 0.4s;
 }
 
 .topnav a:hover {
@@ -158,18 +160,15 @@ body {
   color: black;
 }
 
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
 .topnav .icon {
   display: none;
+
 }
 
 @media screen and (max-width: 600px) {
   .topnav a{display: none;} 
   .topnav a.icon {
+
     float: left;
     display: block;
   }
@@ -187,3 +186,4 @@ body {
     text-align: right;
   }
 }
+
