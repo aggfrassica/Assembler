@@ -15,38 +15,17 @@
     <body>
        
         <?php 
-        
-        include(__DIR__ .'/../php_Assembler/connection.php');
+        include(__DIR__ .'/../php_Assembler/navbar.php'); //Carica dinamicamente il codice della navbar
+        include(__DIR__ .'/../php_Assembler/connection.php'); //Stabilisce connessione con il database
 
         $query="SELECT * FROM `PC` WHERE id=1";
 
-        $data=$connection->query($query);
+        $data=$connection->query($query); // esegue la query precedente
         
         foreach($data as $row){
         
         ?>
-        <!-- HTML PER LA NAVBAR -->
-    <div class="topnav" id="myTopnav">
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-        <a href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>  
-    </div>
-
-<!-- SCRIPT PER LA NAVBAR -->
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
+        
         
         <div class="php_body">
         
@@ -55,11 +34,11 @@
 
 
         <div class="php_menu">
-
-        <h1><?php echo $row["title"]?></h1>
+            <!-- Carica titolo dal db -->
+        <h1><?php echo $row["title"]?></h1> 
         <ul>
         
-
+          <li><?php echo $row["CPU"]?></li>  
           <li><?php echo $row["HD"]?></li>
           <li><?php echo $row["RAM"]?></li> 
           <li><?php echo $row["Motherboard"]?></li>

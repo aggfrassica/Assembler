@@ -18,18 +18,28 @@
     
     <body>
        
-        <header>
-            <img class="logo" src="images/logo.svg" alt="logo">
-            <nav>
-                <ul class="nav__links">
-                    <li class="vetrina"><a href="#" >Vetrina</a></li>
-                    <li class="assembla"><a href="#" >Assembla</a></li>
-                   
-               </ul>
-            </nav>
-            <a class="cta" href="#">?</a>
-            
-        </header>
+      
+        <div class="topnav" id="myTopnav">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+          </a>
+          
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>  
+      </div>
+  
+  <!-- SCRIPT PER LA NAVBAR -->
+      <script>
+          function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                  x.className += " responsive";
+              } else {
+                  x.className = "topnav";
+              }
+          }
+      </script>
   <div class="one">
  <p class="line anim-typewriter">Assembla il tuo pc.</p>
 </div>

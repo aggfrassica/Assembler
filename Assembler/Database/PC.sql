@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Creato il: Feb 10, 2020 alle 09:34
+-- Creato il: Feb 11, 2020 alle 11:29
 -- Versione del server: 10.4.8-MariaDB
 -- Versione PHP: 7.1.33
 
@@ -31,6 +31,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `PC` (
   `id` int(11) NOT NULL,
   `title` varchar(500) DEFAULT NULL,
+  `CPU` varchar(500) DEFAULT NULL,
   `HD` varchar(500) DEFAULT NULL,
   `RAM` varchar(500) DEFAULT NULL,
   `Motherboard` varchar(500) DEFAULT NULL,
@@ -45,13 +46,13 @@ CREATE TABLE `PC` (
 -- Dump dei dati per la tabella `PC`
 --
 
-INSERT INTO `PC` (`id`, `title`, `HD`, `RAM`, `Motherboard`, `Video`, `OS`, `Case`, `Prezzo`, `Descrizione`) VALUES
-(1, 'Prova TITLE1', 'Prova HD1', 'Prova RAM1', 'Prova Motherboard1', 'Prova Video1', 'Prova OS1', 'Prova Case1', 1000, 'Prova Descrizione1'),
-(2, 'Prova TITLE2', 'Prova HD2', 'Prova RAM2', 'Prova Motherboard2', 'Prova Video2', 'Prova OS2', 'Prova Case2', 1000, 'Prova Descrizione2'),
-(3, 'Prova TITLE3', 'Prova HD3', 'Prova RAM3', 'Prova Motherboard3', 'Prova Video3', 'Prova OS3', 'Prova Case3', 1000, 'Prova Descrizione3'),
-(4, 'Prova TITLE4', 'Prova HD4', 'Prova RAM4', 'Prova Motherboard4', 'Prova Video4', 'Prova OS4', 'Prova Case4', 1000, 'Prova Descrizione4'),
-(5, 'Prova TITLE5', 'Prova HD5', 'Prova RAM5', 'Prova Motherboard5', 'Prova Video5', 'Prova OS5', 'Prova Case5', 1000, 'Prova Descrizione5'),
-(6, 'Prova TITLE6', 'Prova HD6', 'Prova RAM6', 'Prova Motherboard6', 'Prova Video6', 'Prova OS6', 'Prova Case6', 1000, 'Prova Descrizione6');
+INSERT INTO `PC` (`id`, `title`, `CPU`, `HD`, `RAM`, `Motherboard`, `Video`, `OS`, `Case`, `Prezzo`, `Descrizione`) VALUES
+(1, 'Intel Core i3 9100F || Gigabyte Z390 UD || Corsair Vengeance 8GB (2x4GB) 3200Mhz || Sahara P35 || Windows 10', 'Intel Core i3 9100F', 'HDD Seagate 1TB / SSD Crucial 500Gb', 'Corsair Vengeance 8GB (2x4GB) 3200Mhz', 'Gigabyte Z390 UD', 'MSI GTX1660Ti Armor OC 6G', 'Windows 10', 'Sahara P35', 925, 'Prova Descrizione1'),
+(2, 'Intel Core i5 9600K || Gigabyte Z390 UD || Corsair Vengeance 8GB || Cooler Master H500P || Windows 10', 'Intel Core i5 9600K', 'Western Digital Blue 1Tb / Seagate Barracuda HDD 2TB', 'Corsair Vengeance 8GB (2x4GB) 3200Mhz', 'Gigabyte Z390 UD', 'RTX 2060 OC 6GB Gigabyte', 'Windows 10', 'Cooler Master H500P', 1252, 'Prova Descrizione2'),
+(3, 'Intel Core i7 9700KF || Gigabyte Z390 UD || Corsair Vengeance LPX 3000MHz 16GB || Cougar Conquer || Windows 10', 'Intel Core i7 9700KF', 'Seagate Barracuda HDD 2TB / Western Digital Blue 2Tb', 'Corsair Vengeance LPX 3000MHz 16GB (2 X 8 GB)', 'Gigabyte Z390 UD', 'GIGABYTE GeForce RTX 2070 WINDFORCE 8Gb', 'Windows 10', 'Cougar Conquer', 1788, 'Prova Descrizione3'),
+(4, 'Ryzen 3 3200G || MSI B450M-A Pro Max || RTX 2060 OC 6GB Gigabyte || Noua Noob X3 || Windows 10', 'Ryzen 3 3200G', 'Seagate 1TB / Crucial 500Gb', 'Corsair Vengeance 8GB (2x4GB) 3200Mhz', 'MSI B450M-A Pro Max', 'RTX 2060 OC 6GB Gigabyte', 'Windows 10', 'Noua Noob X3', 810, 'Prova Descrizione4'),
+(5, 'Ryzen 5 3600x || MSI B450M-A Pro Max || Corsair Vengeance LPX 3000MHz 16GB || NZXT H500 || Windows 10', 'Ryzen 5 3600x', 'Western Digital Blue 1Tb / Seagate Barracuda HDD 2TB', 'Corsair Vengeance LPX 3000MHz 16GB (2 X 8 GB)', 'MSI B450M-A Pro Max', 'MSI RTX 2070 SUPER VENTUS OC', 'Windows 10', 'NZXT H500', 1263, 'Prova Descrizione5'),
+(6, 'Ryzen 7 3800x || Corsair Vengeance LPX 3000MHz 16GB || MSI X570 Gaming Edge || NZXT N450 || Windows 10', 'Ryzen 7 3800x', 'Seagate Barracuda HDD 2TB / Western Digital Blue 2Tb', 'Corsair Vengeance LPX 3000MHz 16GB (2 X 8 GB)', 'MSI X570 Gaming Edge', 'Gigabyte RTX 2080 Super', 'Windows 10', 'NZXT N450', 2581, 'Prova Descrizione6');
 
 --
 -- Indici per le tabelle scaricate

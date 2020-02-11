@@ -1,16 +1,25 @@
 <?php
 
-echo '<header>
-<img class="logo" src="images/logo.svg" alt="logo">
-<nav>
-    <ul class="nav__links">
-        <li class="vetrina"><a href="./../index.html" >Home</a></li>
-        
-       
-   </ul>
-</nav>
-<a class="cta" href="#">?</a>
+echo ' <div class="topnav" id="myTopnav">
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+</a>
+<a href="./../index.html">Home</a>
+<a href="#news">News</a>
+<a href="#contact">Contact</a>
+<a href="#about">About</a>  
+</div>
 
-</header>';
+<!-- SCRIPT PER LA NAVBAR -->
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>';
 
 ?>

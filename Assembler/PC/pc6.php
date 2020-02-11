@@ -38,7 +38,7 @@
         <h1><?php echo $row["title"]?></h1>
         <ul>
         
-
+        <li><?php echo $row["CPU"]?></li> 
         <li><?php echo $row["HD"]?></li>
           <li><?php echo $row["RAM"]?></li> 
           <li><?php echo $row["Motherboard"]?></li>

@@ -154,7 +154,7 @@ body {
 }
 
 .topnav a:hover {
-  background-color: orange;
+  background-color: #0088a9; /*  Usa questo colore */
   color: black;
 }
 
