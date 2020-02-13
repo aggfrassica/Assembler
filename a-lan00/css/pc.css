@@ -1,0 +1,11 @@
+#descr{
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
+.nomi{
+	list-style-type: none;
+	transition-duration: 0.5s;
+}
+.nomi:hover{
+	color: #6711FF;
+}
