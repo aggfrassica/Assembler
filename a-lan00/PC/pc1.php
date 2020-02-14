@@ -6,9 +6,12 @@
 <title>pc1</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="./../css/navbar.css">
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- CSS styles -->
+<link rel="stylesheet" type="text/css" href="../css/style.css">
 <link rel="stylesheet" href="./../css/php_style.css">
-<link rel="stylesheet" href="./../css/scroll.css">
+<!-- Font -->
 <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -58,7 +61,7 @@ foreach($data as $row){
     <?php echo $row["title"]?>
     </div>
     <?php }
-    include(__DIR__ .'/../php_Assembler/footer.php');
+    // include(__DIR__ .'/../php_Assembler/footer.php');
     ?>
     </body>
     
