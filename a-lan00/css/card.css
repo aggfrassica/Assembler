@@ -1,19 +1,59 @@
+body{
+  padding-top: 50px;
+}
 .spec{
     list-style: none; /* Remove default bullets */
-  }
-  
-  .spec li::before {
+}
+.spec li::before {
     content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
     color: #007bff; /* Change the color */
     font-weight: bold; /* If you want it to be bold */
     display: inline-block; /* Needed to add space between the bullet and the text */
     width: 1em; /* Also needed for space (tweak if needed) */
     margin-left: -1em; /* Also needed for space (tweak if needed) */
-  }
-  .card{
-
-    border-radius: 30px;
+}
+.card{
+    border-radius: 25px;
     float: inherit;
     margin: 0 auto;
     margin-top: 10%;
-     }
+    width: 22rem;
+    height: 50rem;
+    background-color: #474747;
+    color: white;
+    margin-bottom: 5vh;
+}
+.card-img, .card-img-top {
+    padding-top: 20px;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}
+element.style {
+    width: 22rem;
+}
+
+.testo{
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 1px 1px 2px black;
+}
+.topnello{
+  position: relative;
+  background-color: #616161;
+  height: 350px;
+}
+.testobello{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  text-shadow: 1px 1px 2px black;
+}
+.gran{
+  font-size: 70px;
+}
+.card-title{
+   text-shadow: 1px 1px 2px black;
+}
