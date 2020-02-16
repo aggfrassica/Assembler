@@ -5,6 +5,9 @@ body{
 .carousel-item{
 	height: 60vh;
 }
+#caros{
+	width: 75%;
+}
 .fixed-top{
 	/*box-shadow: 0px 2px 8px black;*/
 	background-color: #222222!important;
