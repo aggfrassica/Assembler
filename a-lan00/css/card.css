@@ -12,7 +12,7 @@
   }
   .card{
 
-
+    border-radius: 30px;
     float: inherit;
     margin: 0 auto;
     margin-top: 10%;

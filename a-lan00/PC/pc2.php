@@ -40,13 +40,13 @@ foreach($data as $row){
   <h1><?php echo $row["title"]?></h1>
   <ul>
   
-  <li><?php echo $row["CPU"]?></li> 
-  <li><?php echo $row["HD"]?></li>
-  <li><?php echo $row["RAM"]?></li> 
-  <li><?php echo $row["Motherboard"]?></li>
-  <li><?php echo $row["Video"]?></li>
-  <li><?php echo $row["OS"]?></li>
-  <li><?php echo $row["Case"]?></li>  
+  <li class="names"><?php echo $row["CPU"]?></li> 
+  <li class="names"><?php echo $row["HD"]?></li>
+  <li class="names"><?php echo $row["RAM"]?></li> 
+  <li class="names"><?php echo $row["Motherboard"]?></li>
+  <li class="names"><?php echo $row["Video"]?></li>
+  <li class="names"><?php echo $row["OS"]?></li>
+  <li class="names"><?php echo $row["Case"]?></li>  
   
   </ul>
   <h2>PREZZO</h2>
