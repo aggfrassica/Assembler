@@ -31,7 +31,7 @@
 
 
         <div class="php_body">
-            <img class="case" src="./../img/case2.jpg"></img>
+            <img class="case" src="./../img/<?php echo $row["img"]?>_white.png"></img>
             <div class="php_menu">
                 <!-- Carica titolo dal db -->
                 <h1 class="titolo"><?php echo $row["title"]?></h1> 

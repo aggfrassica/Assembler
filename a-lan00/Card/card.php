@@ -36,7 +36,7 @@ foreach($data as $row){
     <div class="row row-cols-1 row-cols-md-3">
       <div class="col-sm-auto">
         <div class="card">
-          <img src="./../img/case2.jpg" class="card-img-top" alt="immagine case">
+          <img src="./../img/<?php echo $row["img"]?>.png" class="card-img-top" alt="immagine case">
           <div class="card-body">
             <h5 class="card-title"><?php echo $row["title"]?></h5>
             <ul class="spec">
@@ -63,7 +63,7 @@ foreach($data as $row){
     ?>
     <div class="col-sm-auto">
     <div class="card">
-      <img src="./../img/case2.jpg" class="card-img-top" alt="immagine case">
+      <img src="./../img/<?php echo $row["img"]?>.png" class="card-img-top" alt="immagine case">
       <div class="card-body">
         <h5 class="card-title"><?php echo $row["title"]?></h5>
         <ul class="spec">
@@ -92,7 +92,7 @@ foreach($data as $row){
     ?>
     <div class="col-sm-auto">
       <div class="card">
-        <img src="./../img/case2.jpg" class="card-img-top" alt="immagine case">
+        <img src="./../img/<?php echo $row["img"]?>.png" class="card-img-top" alt="immagine case">
         <div class="card-body">
           <h5 class="card-title"><?php echo $row["title"]?></h5>
           <ul class="spec">
@@ -120,7 +120,7 @@ foreach($data as $row){
     ?>
     <div class="col-sm-auto">
       <div class="card">
-        <img src="./../img/case2.jpg" class="card-img-top" alt="immagine case">
+        <img src="./../img/<?php echo $row["img"]?>.png" class="card-img-top" alt="immagine case">
         <div class="card-body">
           <h5 class="card-title"><?php echo $row["title"]?></h5>
           <ul class="spec">
@@ -149,7 +149,7 @@ foreach($data as $row){
     ?>
     <div class="col-sm-auto">
       <div class="card">
-        <img src="./../img/case2.jpg" class="card-img-top" alt="immagine case">
+        <img src="./../img/<?php echo $row["img"]?>.png" class="card-img-top" alt="immagine case">
         <div class="card-body">
           <h5 class="card-title"><?php echo $row["title"]?></h5>
           <ul class="spec">
@@ -175,7 +175,7 @@ foreach($data as $row){
     ?>
     <div class="col-sm-auto">
       <div class="card">
-        <img src="./../img/case2.jpg" class="card-img-top" alt="immagine case">
+        <img src="./../img/<?php echo $row["img"]?>.png" class="card-img-top" alt="immagine case">
         <div class="card-body">
           <h5 class="card-title" class="testo"><?php echo $row["title"]?></h5>
           <ul class="spec">

@@ -33,7 +33,7 @@ foreach($data as $row){
     ?>
     <div class="php_body">
     
-    <img class="case" src="./../img/case2.jpg"></img>
+    <img class="case" src="./../img/<?php echo $row["img"]?>_white.png"></img>
     
     
     
