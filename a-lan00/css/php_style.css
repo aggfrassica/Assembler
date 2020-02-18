@@ -109,3 +109,9 @@ h1.price{
 .amzn:focus,.ebay:focus{
     outline: 0;
 }
+#grande{
+    position: relative;
+    width: 48vh;
+    float: left;
+    margin-top: 20vh;
+}
