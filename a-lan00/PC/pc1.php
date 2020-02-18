@@ -21,9 +21,13 @@
     include(__DIR__ .'/../php_Assembler/navbar.php'); //Carica dinamicamente il codice della navbar
     include(__DIR__ .'/../php_Assembler/connection.php'); //Stabilisce connessione con il database
 
-    $query="SELECT * FROM `PC` WHERE id=1";
+    $query2='SELECT * ,pc.id
+    FROM images
+    inner join pc 
+    ON pc.images_idimages = images.idimages
+    where pc.id=1';
 
-    $data=$connection->query($query); // esegue la query precedente
+    $data=$connection->query($query2); // esegue la query precedente
 
     foreach($data as $row){
 
@@ -37,27 +41,38 @@
                 <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
                 <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
             </ol>
             <div class="carousel-inner">
-                <div class="carousel-item active" style="background-image: url(https://source.unsplash.com/category/nature);">
+                <div class="carousel-item active" style="background-image:url( <?php echo 'data:image/png;base64,'.base64_encode($row["images_Case"])?>);">
                     <!-- <img src="" class="d-block w-100" alt="..."> -->
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                       
                     </div>
                 </div>
-                <div class="carousel-item" style="background-image: url(https://source.unsplash.com/category/nature);">
+                <div class="carousel-item" style="background-image: url(<?php echo 'data:image/png;base64,'.base64_encode($row["images_CPU"])?>);">
                     <!-- <img src="https://source.unsplash.com/category/nature" class="d-block w-100" alt="..."> -->
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                       
                     </div>
                 </div>
-                <div class="carousel-item" style="background-image: url(https://source.unsplash.com/category/nature);">
+                <div class="carousel-item" style="background-image: url(<?php echo 'data:image/png;base64,'.base64_encode($row["images_RAM"])?>);">
                     <!-- <img src="https://source.unsplash.com/category/nature" class="d-block w-100" alt="..."> -->
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url(<?php echo 'data:image/png;base64,'.base64_encode($row["images_SM"])?>);">
+                    <!-- <img src="https://source.unsplash.com/category/nature" class="d-block w-100" alt="..."> -->
+                    <div class="carousel-caption d-none d-md-block">
+                        
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url(<?php echo 'data:image/png;base64,'.base64_encode($row["images_SV"])?>);">
+                    <!-- <img src="https://source.unsplash.com/category/nature" class="d-block w-100" alt="..."> -->
+                    <div class="carousel-caption d-none d-md-block">
+                        
                     </div>
                 </div>
             </div>
@@ -71,6 +86,15 @@
             </a>
         </div>  
     </div>
+    <?php 
+    }
+    $query="SELECT * FROM `PC` WHERE id=1";
+
+    $data=$connection->query($query); // esegue la query precedente
+
+    foreach($data as $row){
+        
+        ?>
             <div class="php_menu">
                 <!-- Carica titolo dal db -->
                 <h1 class="titolo"><?php echo $row["title"]?></h1> 
