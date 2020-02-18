@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: rgba(255,255,255,1);
+	font-family: 'Poppins', sans-serif;
+}
+nav{
+	min-height: 10vh;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0px;
+}
+header{
+	box-shadow:0px 5px 8px lightgrey;  
+}
+.destra, .sinistra{
+	display: flex;
+	padding: 20px;
+	align-items: center;
+}
+h3{
+	text-align: center;
+	padding: 20px
+}
+img{
+	width: 10vh;
+	height: 10vh;
+}
+.pagina-home{
+	/*margin: 0px 5%;*/
+/*	background-color: grey;
+*/	/*min-height: 40vh;*/
+	margin-top: 5vh;
+	display: grid;
+	grid-template-columns: 5% 1fr 1fr 1fr 5%;
+
+}
+.case{
+	width: 100%;
+	height: auto;
+	grid-column: 2/3;
+
+}
+.nomepc{
+	text-align: left;
+}
+ul{
+	padding: 40px;
+	grid-column: 3/4;
+}
+li{
+	padding: 10px 30px; 
+	list-style-type: none;
+}
+button{
+    height: 80px;
+    width: 160px;
+    float: left;
+    align-self: end;
+    background: linear-gradient(to right, #ffd166 5%, #ff8a8a 100%);
+    background-color: #ffd166;
+    border-radius: 15px;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    color: #424242;
+    font-family: Arial;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 8px 32px;
+    text-decoration: none;
+    /* width: 100px; */
+}
+
