@@ -12,16 +12,8 @@
 </head>
 <body>
 
-<!-- CARICO PC 1 DAL DATABASE -->
-  <?php include(__DIR__ .'/../php_Assembler/navbar.php');
-  include(__DIR__ .'/../php_Assembler/connection.php');
-
-  $query="SELECT * FROM `PC` WHERE id=1";
-
-$data=$connection->query($query); // esegue la query precedente
-
-foreach($data as $row){ 
-  ?>
+<!-- CARICO NAVBAR -->
+  <?php include(__DIR__ .'/../php_Assembler/navbar.php');?>
 
 
   <div class="topnello">
@@ -31,168 +23,40 @@ foreach($data as $row){
     </div>
   </div>
 
-  <!-- vetrina pc -->
+  <!-- CARICO VETRINA-->
 <div class="container-fluid">
     <div class="row row-cols-1 row-cols-md-3">
+    <?php 
+  include(__DIR__ .'/../php_Assembler/connection.php');
+
+  $query="SELECT * FROM `PC`
+  ORDER BY Prezzo ASC ";
+
+$data=$connection->query($query); // esegue la query precedente
+
+foreach($data as $row){ 
+  
+  echo '
       <div class="col-sm-auto">
         <div class="card">
-          <?php echo '<img src="data:image/png;base64,'.base64_encode($row["img"]).'" class="card-img-top" alt="immagine case">'?>
+          <img src="data:image/png;base64,'.base64_encode($row["img"]).'" class="card-img-top" alt="immagine case">
           <div class="card-body">
-            <h5 class="card-title"><?php echo $row["title"]?></h5>
+            <h5 class="card-title">'.$row["title"].'</h5>
             <ul class="spec">
-              <li class="testo"><?php echo $row["CPU"]?></li>  
-              <li class="testo"><?php echo $row["HD"]?></li>
-              <li class="testo"><?php echo $row["RAM"]?></li> 
-              <li class="testo"><?php echo $row["Video"]?></li>
+              <li class="testo">'.$row["CPU"].'</li>  
+              <li class="testo">'.$row["HD"].'</li>
+              <li class="testo">'.$row["RAM"].'</li> 
+              <li class="testo">'.$row["Video"].'</li>
             </ul>
-            <a href="../PC/pc1.php" class="btn btn-primary"><?php echo $row["Prezzo"]."€"?></a>
+            <a href="../PC/pc'.$row["id"].'.php" class="btn btn-primary">'.$row["Prezzo"]."€".'</a>
           </div>
         </div>
-      </div>
-      <!-- CARICO PC 2 DAL DATABASE -->
-      <?php
-    }
-    $query="SELECT * FROM `PC` WHERE id=2";
+      </div> 
+  ';  
+    }?> 
 
-    $data=$connection->query($query); // esegue la query precedente
-
-    foreach($data as $row){
-
-
-
-    ?>
-    <div class="col-sm-auto">
-    <div class="card">
-    <?php echo '<img src="data:image/png;base64,'.base64_encode($row["img"]).'" class="card-img-top" alt="immagine case">'?>
-      <div class="card-body">
-        <h5 class="card-title"><?php echo $row["title"]?></h5>
-        <ul class="spec">
-          <li class="testo"><?php echo $row["CPU"]?></li>  
-          <li class="testo"><?php echo $row["HD"]?></li>
-          <li class="testo"><?php echo $row["RAM"]?></li> 
-          <li class="testo"><?php echo $row["Video"]?></li>
-
-        </ul>
-        <a href="../PC/pc2.php" class="btn btn-primary"><?php echo $row["Prezzo"]."€"?></a>
-
-      </div>
-    </div>
-    </div>
-    <!-- CARICO PC 3 DAL DATABASE -->
-   <?php
-   }
-   $query="SELECT * FROM `PC` WHERE id=3";
-
-   $data=$connection->query($query); // esegue la query precedente
-
-    foreach($data as $row){
-
-
-
-    ?>
-    <div class="col-sm-auto">
-      <div class="card">
-      <?php echo '<img src="data:image/png;base64,'.base64_encode($row["img"]).'" class="card-img-top" alt="immagine case">'?>
-        <div class="card-body">
-          <h5 class="card-title"><?php echo $row["title"]?></h5>
-          <ul class="spec">
-            <li class="testo"><?php echo $row["CPU"]?></li>  
-            <li class="testo"><?php echo $row["HD"]?></li>
-            <li class="testo"><?php echo $row["RAM"]?></li> 
-            <li class="testo"><?php echo $row["Video"]?></li>
-
-          </ul>
-          <a href="../PC/pc3.php" class="btn btn-primary"><?php echo $row["Prezzo"]."€"?></a>
-        </div>
-      </div>
-    </div>
-    <!-- CARICO PC 4 DAL DATABASE -->
-    <?php
-    }
-    $query="SELECT * FROM `PC` WHERE id=4";
-
-    $data=$connection->query($query); // esegue la query precedente
-
-    foreach($data as $row){
-
-
-
-    ?>
-    <div class="col-sm-auto">
-      <div class="card">
-      <?php echo '<img src="data:image/png;base64,'.base64_encode($row["img"]).'" class="card-img-top" alt="immagine case">'?>
-        <div class="card-body">
-          <h5 class="card-title"><?php echo $row["title"]?></h5>
-          <ul class="spec">
-            <li class="testo"><?php echo $row["CPU"]?></li>  
-            <li class="testo"><?php echo $row["HD"]?></li>
-            <li class="testo"><?php echo $row["RAM"]?></li> 
-            <li class="testo"><?php echo $row["Video"]?></li>
-
-
-          </ul>
-          <a href="../PC/pc4.php" class="btn btn-primary"><?php echo $row["Prezzo"]."€"?></a>
-        </div>
-      </div>
-    </div>
-    <!-- CARICO PC 5 DAL DATABASE -->
-    <?php
-    }
-    $query="SELECT * FROM `PC` WHERE id=5";
-
-    $data=$connection->query($query); // esegue la query precedente
-
-    foreach($data as $row){
-
-
-
-    ?>
-    <div class="col-sm-auto">
-      <div class="card">
-      <?php echo '<img src="data:image/png;base64,'.base64_encode($row["img"]).'" class="card-img-top" alt="immagine case">'?>
-        <div class="card-body">
-          <h5 class="card-title"><?php echo $row["title"]?></h5>
-          <ul class="spec">
-            <li class="testo"><?php echo $row["CPU"]?></li>  
-            <li class="testo"><?php echo $row["HD"]?></li>
-            <li class="testo"><?php echo $row["RAM"]?></li> 
-            <li class="testo"><?php echo $row["Video"]?></li>
-
-          </ul>
-          <a href="../PC/pc5.php" class="btn btn-primary"><?php echo $row["Prezzo"]."€"?></a>
-        </div>
-      </div>
-    </div>
-    <!-- CARICO PC 6 DAL DATABASE -->
-    <?php
-    }
-    $query="SELECT * FROM `PC` WHERE id=6";
-
-    $data=$connection->query($query); // esegue la query precedente
-
-    foreach($data as $row){
-
-    ?>
-    <div class="col-sm-auto">
-      <div class="card">
-      <?php echo '<img src="data:image/png;base64,'.base64_encode($row["img"]).'" class="card-img-top" alt="immagine case">'?>
-        <div class="card-body">
-          <h5 class="card-title" class="testo"><?php echo $row["title"]?></h5>
-          <ul class="spec">
-            <li class="testo"><?php echo $row["CPU"]?></li>  
-            <li class="testo"><?php echo $row["HD"]?></li>
-            <li class="testo"><?php echo $row["RAM"]?></li> 
-            <li class="testo"><?php echo $row["Video"]?></li>
-
-          </ul>
-          <a href="../PC/pc6.php" class="btn btn-primary"><?php echo $row["Prezzo"]."€"?></a>
-        </div>
-      </div>
-    </div>
-</div>    
-    <?php }?> 
-
-
+</div>
+</div>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

@@ -45,31 +45,31 @@
                 <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
             </ol>
             <div class="carousel-inner">
-                <div class="carousel-item active" style="background-image:url( <?php echo 'data:image/png;base64,'.base64_encode($row["images_Case"])?>);">
+                <div class="carousel-item active" style="  background-repeat: no-repeat; height: 500px; background-size: cover; object-fit: cover; background-image:url( <?php echo 'data:image/png;base64,'.base64_encode($row["images_Case"])?>);">
                     <!-- <img src="" class="d-block w-100" alt="..."> -->
                     <div class="carousel-caption d-none d-md-block">
                        
                     </div>
                 </div>
-                <div class="carousel-item" style="background-image: url(<?php echo 'data:image/png;base64,'.base64_encode($row["images_CPU"])?>);">
+                <div class="carousel-item" style="  background-repeat: no-repeat; height: 500px; background-size: cover; object-fit: cover; background-image: url(<?php echo 'data:image/png;base64,'.base64_encode($row["images_CPU"])?>);">
                     <!-- <img src="https://source.unsplash.com/category/nature" class="d-block w-100" alt="..."> -->
                     <div class="carousel-caption d-none d-md-block">
                        
                     </div>
                 </div>
-                <div class="carousel-item" style="background-image: url(<?php echo 'data:image/png;base64,'.base64_encode($row["images_RAM"])?>);">
+                <div class="carousel-item" style="  background-repeat: no-repeat; height: 500px; background-size: cover; object-fit: cover; background-image: url(<?php echo 'data:image/png;base64,'.base64_encode($row["images_RAM"])?>);">
                     <!-- <img src="https://source.unsplash.com/category/nature" class="d-block w-100" alt="..."> -->
                     <div class="carousel-caption d-none d-md-block">
                         
                     </div>
                 </div>
-                <div class="carousel-item" style="background-image: url(<?php echo 'data:image/png;base64,'.base64_encode($row["images_SM"])?>);">
+                <div class="carousel-item" style="  background-repeat: no-repeat; height: 500px; background-size: cover; object-fit: cover; background-image: url(<?php echo 'data:image/png;base64,'.base64_encode($row["images_SM"])?>);">
                     <!-- <img src="https://source.unsplash.com/category/nature" class="d-block w-100" alt="..."> -->
                     <div class="carousel-caption d-none d-md-block">
                         
                     </div>
                 </div>
-                <div class="carousel-item" style="background-image: url(<?php echo 'data:image/png;base64,'.base64_encode($row["images_SV"])?>);">
+                <div class="carousel-item" style="   background-repeat: no-repeat; height: 500px; background-size: cover; object-fit: cover; background-image: url(<?php echo 'data:image/png;base64,'.base64_encode($row["images_SV"])?>);">
                     <!-- <img src="https://source.unsplash.com/category/nature" class="d-block w-100" alt="..."> -->
                     <div class="carousel-caption d-none d-md-block">
                         
