@@ -15,6 +15,8 @@
 <!-- CARICO NAVBAR -->
   <?php include(__DIR__ .'/../php_Assembler/navbar.php');?>
 
+  
+
 
   <div class="topnello">
     <div class="testobello">
@@ -22,7 +24,11 @@
       <h4>Vetrina di tutti i pc disponibili</h4>
     </div>
   </div>
-
+  <select class="custom-select">
+  
+  <option value="ASC">Prezzo crescente</option>
+  <option value="DESC">Prezzo decrescente</option>
+</select>
   <!-- CARICO VETRINA-->
 <div class="container-fluid">
     <div class="row row-cols-1 row-cols-md-3">
@@ -31,6 +37,25 @@
 
   $query="SELECT * FROM `PC`
   ORDER BY Prezzo ASC ";
+ 
+  if(isset($_POST["custom-select"])){
+
+    $selected_val = strtolower($_POST['custom-select']); 
+
+        switch($selected_val){
+
+          case "ASC":
+
+          echo "ciao";
+
+            case "DESC":
+
+              echo "ciao";
+
+        }
+
+  }
+  
 
 $data=$connection->query($query); // esegue la query precedente
 
