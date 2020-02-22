@@ -54,41 +54,62 @@ body{
 h1{
 	padding: 30px 0px 30px 50px;
 }
+/*h2{
+  padding: 20px;
+}*/
 nav{
-	display: flex;
+	display: grid;
+  grid-template-columns: 10% 1fr 2fr 1fr 10%;
 	width: 100%;
 	height: 10vh;
 	box-shadow: 0px 5px 10px lightgrey;
 }
 .bar {
-	cursor: pointer;
-    position: absolute;
-    left: 50%;
-    display: flex;
+    cursor: pointer;
+    display: grid;
     align-self: center;
-    border-radius: 30px;
-    width: 450px;
-    transform: translate(-50%);
-    height: 50px;
-    background-color: #FED025;
+    /* border-radius: 30px; *//*
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;*/
+    width: 100%;
+    /* background-color: #FED025; */
+    grid-column: 3/4;
+    grid-template-columns: 1fr 0.5fr 1fr;
 }
-.bar:hover{
-	animation: pulse 1.2s ease-out infinite alternate;
-}
+
 .home{
-	display: flex;
+  display: flex;
 	margin: 0 auto;
 	align-self: center;
 	width: 60px;
 	height: 60px;
 	border-radius: 50px;
-	background-color: #824AFF;
+	/*background-color: #824AFF;*/
+  box-shadow: 0 0 10px #888888;
+}
+.logo{
+  grid-column: 2/3;
+  align-self: center;
 }
 img{
 	margin: 0 auto;
 	align-self: center;
 	max-width: 100%;
 	height: auto;
+}
+.logoinfo,.logopc{
+  align-self: center;
+  width:30px;
+}
+}
+.goccia{
+  transition: 1.3s;
+  border-radius: 50%;
+
+}
+.goccia:hover{
+  background-color: #FED025;
+  /*box-shadow: 0 0 5px 10px #FED025*/
 }
 .casa{
 	margin: 0 auto;
@@ -100,39 +121,39 @@ img{
 	display: flex;
 	width: 50px;
 	height: 30px;
-	align-self: center;
-	position: absolute;
-	left: 10%;
-	transform: translate(-10%);
+  align-self: center;
+  width: 100%;
+  justify-content: flex-end;
 }
 .info{
 	display: flex;
 	width: 30px;
 	height: 30px;
-	align-self: center;
-	position: absolute;
-	right: 32%;
-	transform: translate(-32%);
+  align-self: center;
+  width: 100%;
 }
 p {
     font-weight: 700;
     align-self: center;
-    padding: 0px 10px;
+    padding: 20px;
     font-size: 20px;
+    opacity: 1;
+    transition: 0.5s;
+
 }
 main {
     width: 100%;
     height: 90vh;
     display: grid;
-    grid-template-columns: 5% 1fr 1fr 1fr 5%;
-    grid-template-rows: 5% 1fr 1fr 5%;
+    grid-template-columns: 10% 1fr 1fr 1fr 10%;
+    grid-template-rows: 10% 1fr 1fr 10%;
 }
 .inde {
     width: 100%;
     height: 90vh;
     display: grid;
     grid-template-columns: 10% 1fr 1fr 1fr 10%;
-    grid-template-rows: 5% 1fr 1fr 5%;
+    grid-template-rows: 10% 1fr 1fr 10%;
 }
 .pc1{height: 100%;
 	width: 100%;
@@ -178,12 +199,13 @@ main {
 	position: relative;
 	display: grid;
 	width: 100%;
-	background-color: #ebebeb;
+	background-color: #f9f9f9;
 	/*height: 50vh;*/
 	grid-column: 2/5;
 	grid-row: 2/3;
 	border-radius: 30px;
 	grid-template-columns: 1fr 1fr 1fr;
+box-shadow: 0 0 5px #888888;
 }
 .pagine{
 	cursor: pointer;
@@ -195,7 +217,7 @@ main {
 	position: absolute;
 	right: 0;
 	width: 100px;
-	background-color: #FED025;
+	background-color: #fddd68;
 	height: 100%;
 	transition: 1s;
 	border-radius: 30px 30px 30px 30px;
@@ -303,17 +325,17 @@ img {vertical-align: middle;}
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: lightgrey;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: grey;
 }
 
 /* Fading animation */
