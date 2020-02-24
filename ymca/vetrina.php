@@ -12,24 +12,7 @@
 <body>
 
 	
-	<header class="sopra">
-		<nav>
-			<h1>LOGO</h1>
-			<div class="bar">
-				<div class="comp">
-					<p>Vetrina</p>
-					<img src="pc.png" alt="pc icon">
-				</div>
-				<a href="index.php"><div class="home">
-					 <img class="casa" src="home.png" alt="hone icon">
-				</div></a>
-				<div class="info">
-					<img src="info.png" alt="info icon">
-					<p>Contatti</p>
-				</div>
-			</div>
-		</nav>
-	</header>
+<?php include('navbar.php'); ?>
 
 
 	<main>
@@ -44,8 +27,15 @@
 
 				echo '<div class="pc">
 				<div class="circle">
-					<div class="prova"></div>
+					
 					<img src="data:image/png;base64,'.base64_encode($row["img"]).'" alt="">
+					<h1 class="title">'.$row["title"].'</h1>
+								<ul class="spec">
+									<li class="testo">'.$row["CPU"].'</li>
+									<li class="testo">'.$row["Video"].'</li>
+									<li class="testo">'.$row["HD"].'</li>
+									<li class="testo">'.$row["Motherboard"].'</li>
+								</ul>
 				</div>
 			</div>';
 			
@@ -66,8 +56,15 @@
 					
 						<div class="pc">
 				<div class="circle">
-					<div class="prova"></div>
+					
 					<img src="data:image/png;base64,'.base64_encode($row["img"]).'" alt="">
+					<h1 class="title">'.$row["title"].'</h1>
+								<ul class="spec">
+									<li class="testo">'.$row["CPU"].'</li>
+									<li class="testo">'.$row["Video"].'</li>
+									<li class="testo">'.$row["HD"].'</li>
+									<li class="testo">'.$row["Motherboard"].'</li>
+								</ul>
 				</div>
 			</div>
 			

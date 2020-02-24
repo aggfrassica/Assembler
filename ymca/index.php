@@ -62,7 +62,7 @@
 								<form method="POST" action="vetrina.php">
 									<div class="listapc">
 									<img class="freccia" src="arrow.png" alt="">
-									<p class="testolista">Guarda i nostri pc di fascia Alta</p>
+									<p class="testolista">Guarda i nostri pc di fascia Bassa</p>
 										<input type="hidden" name="Fascia" value="Bassa">
 										<input class="bottone" type="submit" id="addButton" value=" ">
 									</form>
@@ -101,7 +101,7 @@
 						<form method="POST" action="vetrina.php">
 								<div class="listapc">
 								<img class="freccia" src="arrow.png" alt="">
-								<p class="testolista">Guarda i nostri pc di fascia Alta</p>
+								<p class="testolista">Guarda i nostri pc di fascia Media</p>
 								
 								<input type="hidden" name="Fascia" value="Media">
 								<input class="bottone"type="submit" id="addButton" value=" ">
