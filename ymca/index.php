@@ -8,27 +8,31 @@
 		<title>PC Home</title>
 	</head>
 	<body>
-		<header class="sopra">
+
+
+	<?php include('navbar.php'); ?>
+		<!-- <header class="sopra">
 			<nav>
 				<h1>LOGO</h1>
 				<div class="bar">
 					<div class="comp">
 						<p class="goccia">Vetrina</p>
-						<!-- <img src="pc.png" alt="pc icon"> -->
+					
 					</div>
 					<div class="home">
 						<img class="casa" src="home.png" alt="hone icon">
 					</div>
 					<div class="info">
-						<!-- <img src="info.png" alt="info icon"> -->
+					
 						<p class="goccia">Contatti</p>
 					</div>
 				</div>
 			</nav>
-		</header>
+		</header> -->
 
 
 			<?php
+			
 			$query="SELECT *from pc where Fascia = 'Bassa' and id <3";
 
 			$data=$connection->query($query);
@@ -46,12 +50,12 @@
 								<img src="data:image/png;base64,'.base64_encode($row["img"]).'" alt="immagine case">
 							</div>
 							<div class="dettagli">
-								<h1>'.$row["title"].'</h1>
-								<ul>
-									<li>'.$row["CPU"].'</li>
-									<li>'.$row["Video"].'</li>
-									<li>'.$row["HD"].'</li>
-									<li>'.$row["Motherboard"].'</li>
+								<h1 class="title">'.$row["title"].'</h1>
+								<ul class="spec">
+									<li class="testo">'.$row["CPU"].'</li>
+									<li class="testo">'.$row["Video"].'</li>
+									<li class="testo">'.$row["HD"].'</li>
+									<li class="testo">'.$row["Motherboard"].'</li>
 								</ul>
 							</div>
 							<div class="prezzo">
@@ -84,12 +88,12 @@
 							<img src="data:image/png;base64,'.base64_encode($row["img"]).'" alt="immagine case">
 						</div>
 						<div class="dettagli">
-							<h1>'.$row["title"].'</h1>
-							<ul>
-								<li>'.$row["CPU"].'</li>
-								<li>'.$row["Video"].'</li>
-								<li>'.$row["HD"].'</li>
-								<li>'.$row["Motherboard"].'</li>
+							<h1 class="title">'.$row["title"].'</h1>
+							<ul class="spec">
+								<li class="testo">'.$row["CPU"].'</li>
+								<li class="testo">'.$row["Video"].'</li>
+								<li class="testo">'.$row["HD"].'</li>
+								<li class="testo">'.$row["Motherboard"].'</li>
 							</ul>
 						</div>
 						<div class="prezzo">
@@ -125,12 +129,12 @@
 							<img src="data:image/png;base64,'.base64_encode($row["img"]).'" alt="immagine case">
 						</div>
 						<div class="dettagli">
-							<h1>'.$row["title"].'</h1>
-							<ul>
-								<li>'.$row["CPU"].'</li>
-								<li>'.$row["Video"].'</li>
-								<li>'.$row["HD"].'</li>
-								<li>'.$row["Motherboard"].'</li>
+							<h1 class="title">'.$row["title"].'</h1>
+							<ul class="spec">
+								<li class="testo">'.$row["CPU"].'</li>
+								<li class="testo">'.$row["Video"].'</li>
+								<li class="testo">'.$row["HD"].'</li>
+								<li class="testo">'.$row["Motherboard"].'</li>
 							</ul>
 						</div>
 						<div class="prezzo">
