@@ -132,8 +132,8 @@
 
 }
 .card .face.face2 .prezzo{
-
-    visibility: hidden;
+  position: absolute;
+  visibility: hidden;
  
  }
 .card:hover .face.face2{
@@ -181,3 +181,10 @@
     font-size: 20em;
     text-align: center;
 } */
+.content{
+  position: absolute;
+    /* bottom: 30px; */
+    top: 20px;
+    left: 10px;
+    /* align-self: center;
+}
