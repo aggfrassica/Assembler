@@ -4,6 +4,7 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="footer.css">
 		<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 		<title>PC Home</title>
 	</head>
@@ -163,7 +164,33 @@
 					<span class="dot" onclick="currentSlide(3)"></span> 
 				</div>
 			</main>
+			
 
+		<footer class="footer-distributed">
+
+			<div class="footer-right">
+
+				<a href="#"><i class="fab fa-facebook-f"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-linkedin"></i></a>
+				<a href="#"><i class="fab fa-github"></i></a>
+
+			</div>
+
+			<div class="footer-left">
+
+				<p class="footer-links">
+					<a class="link-1" href="index.php">Home</a>
+
+					<a class="link-1" href="vetrina.php">Vetrina</a>
+
+					<a class="link-1" href="vetrina.php">Contatti</a>
+				</p>
+
+				<p>Liviana &copy; 2020</p>
+			</div>
+
+		</footer>
 			<!-- script per carousel -->
 			<script>
 				var slideIndex = 1;

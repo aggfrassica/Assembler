@@ -13,10 +13,12 @@ echo '<header class="sopra">
         <a href="index.php"><div class="home">
             <img class="casa" src="home.png" alt="hone icon">
         </div></a>
+        <a href="vetrina.php">
         <div class="info">
             
             <p class="goccia">Contatti</p>
         </div>
+        </a>
     </div>
 </nav>
 </header>';

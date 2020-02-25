@@ -5,6 +5,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="card.css">
 	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 
 	<title>PC Home</title>
@@ -14,6 +15,9 @@
 	
 <?php include('navbar.php'); ?>
 
+
+                   
+                       
 
 	<main>
 	<?php
@@ -26,9 +30,10 @@
 			foreach($data as $row){ 
 
 				echo '<div class="pc">
-				<div class="circle">
+				<div class="card">
+					<div class="face face1">
+						<div class="content">
 					
-					<img src="data:image/png;base64,'.base64_encode($row["img"]).'" alt="">
 					<h1 class="title">'.$row["title"].'</h1>
 								<ul class="spec">
 									<li class="testo">'.$row["CPU"].'</li>
@@ -36,7 +41,12 @@
 									<li class="testo">'.$row["HD"].'</li>
 									<li class="testo">'.$row["Motherboard"].'</li>
 								</ul>
-				</div>
+								</div>
+								</div>
+								<div class="face face2">
+								<img src="data:image/png;base64,'.base64_encode($row["img"]).'" alt="">
+								<h3 class="prezzo">Prezzo</h3>
+								</div></div>
 			</div>';
 			
 		}
@@ -55,9 +65,10 @@
 						echo '
 					
 						<div class="pc">
-				<div class="circle">
+				<div class="card">
+					<div class="face face1">
+						<div class="content">
 					
-					<img src="data:image/png;base64,'.base64_encode($row["img"]).'" alt="">
 					<h1 class="title">'.$row["title"].'</h1>
 								<ul class="spec">
 									<li class="testo">'.$row["CPU"].'</li>
@@ -65,7 +76,12 @@
 									<li class="testo">'.$row["HD"].'</li>
 									<li class="testo">'.$row["Motherboard"].'</li>
 								</ul>
-				</div>
+								</div>
+								</div>
+								<div class="face face2">
+								<img src="data:image/png;base64,'.base64_encode($row["img"]).'" alt="">
+							<h3 class="prezzo">Prezzo</h3>
+								</div></div>
 			</div>
 			
 								
