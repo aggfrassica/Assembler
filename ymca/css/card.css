@@ -136,6 +136,11 @@
   visibility: hidden;
  
  }
+ .card .face.face2 .input_prezzo{
+
+    position: absolute;
+    visibility: hidden;
+}
 .card:hover .face.face2{
 
    height: 60px;
@@ -154,6 +159,12 @@
 
  }
  .card:hover .face.face2 .prezzo{
+
+    visibility: visible;
+    
+
+ }
+ .card:hover .face.face2 .input_prezzo{
 
     visibility: visible;
     

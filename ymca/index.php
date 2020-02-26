@@ -1,10 +1,10 @@
-	<?php  session_start();include('connection.php'); ?>
+	<?php  session_start();include(__DIR__.'/php/connection.php'); ?>
 	<!DOCTYPE html>
 	<html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="stylesheet" type="text/css" href="footer.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link rel="stylesheet" type="text/css" href="./css/footer.css">
 		<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>PC Home</title>
@@ -12,25 +12,8 @@
 	<body>
 
 
-		<?php include('navbar.php'); ?>
-		<!-- <header class="sopra">
-			<nav>
-				<h1>LOGO</h1>
-				<div class="bar">
-					<div class="comp">
-						<p class="goccia">Vetrina</p>
-					
-					</div>
-					<div class="home">
-						<img class="casa" src="home.png" alt="hone icon">
-					</div>
-					<div class="info">
-					
-						<p class="goccia">Contatti</p>
-					</div>
-				</div>
-			</nav>
-		</header> -->
+		<?php include(__DIR__.'/php/navbar.php'); ?>
+		
 
 
 		<?php
@@ -60,17 +43,17 @@
 			<li class="testo">'.$row["Motherboard"].'</li>
 			</ul>
 			</div>
-			<div class="prezzo">
+			
 			<form method="POST" action="vetrina.php">
 			<div class="listapc">
-			<img class="freccia" src="arrow.png" alt="">
+			<img class="freccia" src="./img/arrow.png" alt="">
 			<p class="testolista">Guarda i nostri pc di fascia Bassa</p>
 			<input type="hidden" name="Fascia" value="Bassa">
 			<input class="bottone" type="submit" id="addButton" value=" ">
 			</form>
 			</div>
 
-			</div>
+			
 			</div> 
 			</div>
 			
@@ -98,11 +81,11 @@
 				<li class="testo">'.$row["Motherboard"].'</li>
 				</ul>
 				</div>
-				<div class="prezzo">
+				
 
 				<form method="POST" action="vetrina.php">
 				<div class="listapc">
-				<img class="freccia" src="arrow.png" alt="">
+				<img class="freccia" src="./img/arrow.png" alt="">
 				<p class="testolista">Guarda i nostri pc di fascia Media</p>
 
 				<input type="hidden" name="Fascia" value="Media">
@@ -111,7 +94,7 @@
 				</div>
 
 
-				</div>
+				
 				</div> 
 				</div>
 
@@ -139,17 +122,17 @@
 					<li class="testo">'.$row["Motherboard"].'</li>
 					</ul>
 					</div>
-					<div class="prezzo">
+					
 					<form method="POST" action="vetrina.php">
 					<div class="listapc">
-					<img class="freccia" src="arrow.png" alt="">
+					<img class="freccia" src="./img/arrow.png" alt="">
 					<p class="testolista">Guarda i nostri pc di fascia Alta</p>
 
 					<input type="hidden" name="Fascia" value="Alta">
 					<input class="bottone"type="submit" id="addButton" value=" ">
 
 					</form>
-					</div>
+					
 
 					</div>
 					</div> 
@@ -167,31 +150,7 @@
 				</main>
 
 
-				<footer class="footer-distributed">
-
-					<div class="footer-right">
-
-						<a href="#" class="fa fa-facebook"></a>
-						<a href="#"><i class="fab fa-twitter"></i></a>
-						<a href="#"><i class="fab fa-linkedin"></i></a>
-						<a href="#"><i class="fab fa-github"></i></a>
-
-					</div>
-
-					<div class="footer-left">
-
-						<p class="footer-links">
-							<a class="link-1" href="index.php">Home</a>
-
-							<a class="link-1" href="vetrina.php">Vetrina</a>
-
-							<a class="link-1" href="vetrina.php">Contatti</a>
-						</p>
-
-						<p>Liviana &copy; 2020</p>
-					</div>
-
-				</footer>
+				<?php include(__DIR__.'/php/footer.php'); ?>
 				<!-- script per carousel -->
 				<script>
 					var slideIndex = 1;

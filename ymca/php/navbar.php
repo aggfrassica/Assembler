@@ -9,10 +9,10 @@ echo '<header class="sopra">
             </a>
             <a href="index.php">
                 <div class="home">
-                    <img class="casa" src="home.png" alt="hone icon"> 
+                    <img class="casa" src="./img/home.png" alt="hone icon"> 
                 </div>
             </a>
-            <a href="vetrina.php" class="info">
+            <a href="pc.php" class="info">
                 <p>Contatti</p>
             </a> 
     </div>

@@ -1,0 +1,448 @@
+/*colori
+giallo: #FED025
+viola: #824AFF
+*/
+/* 
+FONTS
+font-family: 'Ubuntu', ;
+
+font-family: 'Noto Sans JP', ;
+
+font-family: 'Nanum Gothic', ;
+
+font-family: 'Noto Sans TC', ;
+ */
+
+
+
+*,
+*::before,
+*::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.bottone{
+	background-color: transparent;
+	width: 100%;
+	height: 100%;
+	border: none;
+
+
+}
+@keyframes pulse {
+  0%, 100% {
+    background-color: #FED025;
+  }
+  50% {
+    background-color: #824AFF;
+  }
+}
+@keyframes muovi {
+  0% {
+    width: 100px;
+  }
+  10% {
+  	width: 120px;
+  }
+  15%{
+  	width: 100px;
+  }
+  20%{
+  	width: 120px;
+  }
+  25%{
+  	width: 100px;
+  }
+  100%{
+  	width: 100px;
+  }
+}
+
+a:visited{
+  color: black;
+  text-decoration: none;
+}
+a:link {
+  text-decoration: none;
+}
+body{
+	font-family: 'Poppins';
+}
+h1{
+	/*padding: 30px 0px 30px 50px;*/
+}
+/*h2{
+  padding: 20px;
+}*/
+nav{
+	display: grid;
+  grid-template-columns: 10% 1fr 2fr 1fr 10%;
+	width: 100%;
+	height: 80px;
+	box-shadow: 0px 5px 10px lightgrey;
+}
+.bar {
+    cursor: pointer;
+    display: grid;
+    align-self: center;
+    /* border-radius: 30px; *//*
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;*/
+    width: 100%;
+    /* background-color: #FED025; */
+    grid-column: 3/4;
+    grid-template-columns: 1fr 0.5fr 1fr;
+}
+
+.home{
+  display: flex;
+	margin: 0 auto;
+	align-self: center;
+	width: 60px;
+	height: 60px;
+	border-radius: 50px;
+	/*background-color: #824AFF;*/
+  box-shadow: 0 0 10px #888888;
+}
+.logo{
+  grid-column: 2/3;
+  align-self: center;
+}
+.imagecase{
+	margin: 0 auto;
+	align-self: center;
+	max-width: 100%;
+	height: 150px;
+
+}
+img{
+	margin: 0 auto;
+	align-self: center;
+	max-width: 100%;
+	height: auto;
+}
+.logoinfo,.logopc{
+  align-self: center;
+  width:30px;
+}
+
+.goccia{
+  transition: 1.0s;
+
+}
+.goccia:hover{
+  background-color: #FED025;
+  /*box-shadow: 0 0 5px 10px #FED025*/
+}
+.casa{
+	margin: 0 auto;
+	align-self: center;
+	width: 40px;
+	height: auto;
+}
+.comp{
+	display: flex;
+	width: 50px;
+	height: 30px;
+  align-self: center;
+  width: 100%;
+  justify-content: flex-end;
+}
+.info{
+	display: flex;
+	width: 30px;
+	height: 30px;
+  align-self: center;
+  width: 100%;
+}
+p {
+    font-weight: 700;
+    align-self: center;
+    padding: 20px;
+    font-size: 20px;
+    opacity: 1;
+    transition: 0.5s;
+
+}
+/*main {
+    padding : 80px 100px;
+    width: 100%;
+    height: 90vh;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows:  1fr 1fr ;
+}*/
+.main_pc{
+  padding: 30px;
+  width: 100%;
+  /*height: 90vh;*/
+ 
+ 
+
+}
+.inde {
+  padding: 30px;
+    width: 100%;
+    /*height: 90vh;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows:  1fr;
+}
+.pc{
+  padding: 80px 0px;
+  height: 100%;
+	width: 100%;
+	/*background-color: red;*/
+	/* grid-column: 2/3;
+	grid-row: 2/3 */
+}
+
+.card-title{
+  text-shadow: 1px 1px 2px black;
+}
+.title{
+
+  text-shadow: 1px 1px 2px black;
+  padding: 30px 0px 30px 50px;
+}
+
+
+.spec li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #824AFF; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+.circle{
+
+     border-radius: 25px;
+    float: inherit;
+    margin: 0 auto;
+    margin-top: 10%;
+    width: 22rem;
+    height: 40rem;
+    margin-bottom: 5vh;
+	background-color: #ededed;
+	transition: 0.7s;
+	border-radius: 10px;
+}
+.prova{
+	width: 100%;
+	background-color: #FED025;
+	height: 0px;
+  transition: 0.7s;
+  
+}
+.circle:hover{
+	border-radius: 25px 25px 25px 25px;
+}
+.circle:hover > .prova{
+	height: 50px;
+	border-radius: 25px 25px 25px 25px;
+}
+.caros_pc{
+  position: relative;
+	display: grid;
+	width: 100%;
+	/*height: 50vh;*/
+	border-radius: 30px;
+	grid-template-columns: 1fr 1fr 1fr;
+
+
+}
+.caros{
+	position: relative;
+	display: grid;
+	width: 100%;
+	background-color: #f9f9f9;
+	/*height: 50vh;*/
+	grid-column: 2/5;
+	grid-row: 2/3;
+	border-radius: 30px;
+	grid-template-columns: 1fr 1fr 1fr;
+box-shadow: 0 0 5px #888888;
+}
+.pagine {
+    cursor: pointer;
+    margin: 30px auto;
+    grid-column: 2/2;
+    grid-row: 2;
+}
+.listapc{
+	position: absolute;
+	right: 0;
+	width: 100px;
+	background-color: #fddd68;
+	height: 100%;
+	transition: 1s;
+	border-radius: 30px 30px 30px 30px;
+	/* animation: muovi 3s ease-out infinite; */
+	cursor: pointer;	
+}
+.listapc:hover{
+	width: 300px;
+	height: 100%;
+	cursor: pointer;
+}
+.listapc:hover > .testolista{
+	opacity: 1;
+}
+.listapc:not(:hover) > .testolista{
+
+  opacity: 0;
+}
+
+.testolista{
+  opacity: 0;
+  transition-delay: 1s;
+  transition-duration: 0s ;
+}
+.freccia{
+	max-height: 100%;
+  	max-width: 100%;
+  	width: 40px;
+  	height: auto;
+  	position: absolute;
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	margin: auto 0;
+}
+.dettagli{
+	padding-left: 50px;
+}
+ul{
+	list-style-type: none;
+}
+li{
+	padding: 10px;
+}
+.case{
+	padding: 50px 0;
+}
+
+/*prova*/
+
+.mySlides {
+	display: none;
+grid-column: 1/4;
+    grid-row: 1/2;
+    border-radius: 30px;
+    grid-template-columns: 1fr 1fr 1fr;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.prezzo{
+
+  padding: 120px 100px 100px 50px;
+}
+
+.amzn {
+  height: 15vh;
+  border-radius: 7px;
+ 
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 100;
+  padding: 12px;
+  margin-top: 2vh;
+  cursor: pointer;
+  text-align: center;
+ 
+} 
+/* .amzn:hover,.ebay:hover{
+  background-color: #f67e7d;
+  color: #843b62;
+}
+.amzn:focus,.ebay:focus{
+  outline: 0;
+} */ 
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 2px;
+  background-color: lightgrey;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: grey;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
