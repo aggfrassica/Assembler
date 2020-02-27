@@ -2,19 +2,14 @@
 
 echo '<header class="sopra">
 <nav>
-    <h1>LOGO</h1>
-    <div class="bar">
-            <a href="vetrina.php" class="comp">
-                <p>Vetrina</p>
-            </a>
-            <a href="index.php">
-                <div class="home">
-                    <img class="casa" src="./img/home.png" alt="hone icon"> 
-                </div>
-            </a>
-            <a href="pc.php" class="info">
-                <p>Contatti</p>
-            </a> 
+    <div class="logo-home">
+        <img src="logo2.png" class="Hlogo" alt="logo">
+        <a href="index.php" title="" class="anifade">Home</a>
+    </div>
+  
+    <div class="logo-home">
+        <a href="vetrina.php" title="" class="anifade">Vetrina</a>
+        <a href="about.html" title="" class="anifade">About</a>
     </div>
 </nav>
 </header>';
