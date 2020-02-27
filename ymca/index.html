@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<title>PC Home</title>
+</head>
+<body>
+	<!-- navbar -->
+	<header class="sopra">
+		<nav>
+			<div class="logo-home">
+				<img src="logo2.png" class="Hlogo" alt="logo">
+				<a href="#" title="" class="anifade">Home</a>
+			</div>
+			<div>
+				<p class="line-1 anim-typewriter">Assebmla il tuo pc.</p>
+			</div>
+			<div class="logo-home">
+				<a href="vetrina.html" title="" class="anifade">Vetrina</a>
+				<a href="about.html" title="" class="anifade">About</a>
+			</div>
+		</nav>
+	</header>
+
+	<!-- main pagina -->
+	<div class="sfondo">
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+				<div class="img_content">
+					
+
+					<img src="case2.jpg" style="width:100%">
+					<div class="cont_butt">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+						<a href="" title="">
+							<p class="sfoglia">Guarda la vetrina con i pc di fascia *
+								<img class="freccia" src="arrow.png" alt="">
+							</p>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="img_content">
+					
+
+					<img src="case2.jpg" style="width:100%">
+					<div class="cont_butt">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+						<a href="" title="">
+							<p class="sfoglia">Guarda la vetrina con i pc di fascia *
+								<img class="freccia" src="arrow.png" alt="">
+							</p>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="img_content">
+					
+
+					<img src="case2.jpg" style="width:100%">
+					<div class="cont_butt">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+						<a href="" title="">
+							<p class="sfoglia">Guarda la vetrina con i pc di fascia *
+								<img class="freccia" src="arrow.png" alt="">
+							</p>
+
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<br>
+			<!-- tre pallini per carousel -->
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span> 
+				<span class="dot" onclick="currentSlide(2)"></span> 
+				<span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+		</div>
+		
+
+		
+
+	</div>
+
+
+	<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			if (n > slides.length) {slideIndex = 1}    
+				if (n < 1) {slideIndex = slides.length}
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";  
+					}
+					for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					slides[slideIndex-1].style.display = "block";  
+					dots[slideIndex-1].className += " active";
+				}
+			</script>			
+		</body>
+		</html>
