@@ -67,6 +67,7 @@ button {
 }
 img {
   vertical-align: middle;
+  max-width: 400px;
 }
 
 /* Slideshow container */

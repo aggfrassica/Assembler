@@ -28,7 +28,7 @@
 				<div class="img_content">
 					
 
-				<img src="data:image/png;base64,'.base64_encode($row["img"]).'" alt="immagine case">
+				<img class="caseimg" src="data:image/png;base64,'.base64_encode($row["img"]).'" alt="immagine case">
 					<div class="cont_butt">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -39,7 +39,7 @@
 						
 							
 								<input type="hidden" name="Fascia" value="Bassa">
-							<input class="sfoglia" type="submit" id="addButton" value="Guarda i pc di fascia* ">
+							<input class="sfoglia" type="submit" id="addButton" value="Guarda i pc di fascia Bassa ">
 							
 							
 							
@@ -58,7 +58,7 @@
 				<div class="img_content">
 					
 
-					<img src="data:image/png;base64,'.base64_encode($row["img"]).'" alt="immagine case">
+					<img class="caseimg" src="data:image/png;base64,'.base64_encode($row["img"]).'" alt="immagine case">
 					<div class="cont_butt">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -68,7 +68,7 @@
 						
 							
 								<input type="hidden" name="Fascia" value="Media">
-							<input class="sfoglia" type="submit" id="addButton" value="Guarda i pc di fascia* ">
+							<input class="sfoglia" type="submit" id="addButton" value="Guarda i pc di fascia Media ">
 							
 							
 							
@@ -87,7 +87,7 @@
 				<div class="img_content">
 					
 
-				<img src="data:image/png;base64,'.base64_encode($row["img"]).'" alt="immagine case">
+				<img class="caseimg" src="data:image/png;base64,'.base64_encode($row["img"]).'" alt="immagine case">
 					<div class="cont_butt">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -97,7 +97,7 @@
 						
 							
 								<input type="hidden" name="Fascia" value="Alta">
-							<input class="sfoglia" type="submit" id="addButton" value="Guarda i pc di fascia* ">
+							<input class="sfoglia" type="submit" id="addButton" value="Guarda i pc di fascia Alta ">
 							
 							
 							

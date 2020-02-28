@@ -13,7 +13,15 @@
 <body>
 	<!-- navbar -->
 	<?php include(__DIR__.'/php/navbar.php'); ?>
-	<div class="sfondo2" style="height: 100%;">
+	<?php if (isset($_POST["Fascia"])){
+		echo '<div class="sfondo2" style="height: 100%;">';
+
+	}else{
+		echo '<div class="sfondo2">';
+
+	}
+		?>
+
 		<!-- riccardo metti ste due cose nel php dinamico per lo sfondo chiedi e ti spiego -->
 	<main class="inde">
 	<?php 

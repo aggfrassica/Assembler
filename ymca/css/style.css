@@ -57,7 +57,16 @@ nav {
     position: absolute;
 }
 
+.caseimg{
 
+  height: 350px;
+  width: 350px;
+  max-width: 350px;
+  max-height: 350px;
+  min-width: 350px;
+
+
+}
 .anifade{
   padding: 30px;
   height: 100%;
