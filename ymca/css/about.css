@@ -1,12 +1,10 @@
 .sfondo3{
-  margin-top: 10vh;
+
   width: 100%;
-  height: 90vh;
-    background-image: url("./../files/Group 3.png");
-    background-repeat: no-repeat;
-    background-position: center; 
-    background-size: cover;
-    position: relative;
+  height: 100%;
+    background-image: url("../files/Group 3.png");
+    background-size: 100% 100%;
+    position: absolute;
 }
 .aboutcont{
 	width: 50%;

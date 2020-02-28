@@ -13,8 +13,8 @@
 <body>
 	<!-- navbar -->
 	<?php include(__DIR__.'/php/navbar.php'); ?>
-	<div class="sfondo2">
-
+	<div class="sfondo2" style="height: 100%;">
+		<!-- riccardo metti ste due cose nel php dinamico per lo sfondo chiedi e ti spiego -->
 	<main class="inde">
 	<?php 
 		//main pagina
@@ -40,11 +40,16 @@
 									</div>
 									</div>
 									<div class="face face2">
-									<form id="myform" method="POST" action="paginapc.php">
+
+<form  method="POST" action="paginapc.php">
+<input type="submit" class="prezzo" value="Prezzo">
+<input type="hidden" name="Fascia" value="'.$row["id"].'">
+</form>
+									
 									<img src="data:image/png;base64,'.base64_encode($row["img"]).'" alt="">
-									<input type="submit" class="sfoglia" value="Prezzo">
-									<input type="hidden" name="Fascia" value="'.$row["id"].'">
-									</form>
+									
+									
+									
 									</div></div>
 				</div>';}}
 
@@ -70,11 +75,15 @@
 									</div>
 									<div class="face face2">
 
-									<form  method="POST" action="paginapc.php">
+<form  method="POST" action="paginapc.php">
+<input type="submit" class="prezzo" value="Prezzo">
+<input type="hidden" name="Fascia" value="'.$row["id"].'">
+</form>
+									
 									<img src="data:image/png;base64,'.base64_encode($row["img"]).'" alt="">
-									<input type="submit" class="sfoglia" value="Prezzo">
-									<input type="hidden" name="Fascia" value="'.$row["id"].'">
-									</form>
+									
+									
+									
 									</div></div>
 				</div>';}
 

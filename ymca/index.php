@@ -33,11 +33,14 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+
 						<form method="POST" action="vetrina.php">
-							<p class="sfoglia">Guarda la vetrina con i pc di fascia *
-								<img class="freccia" src="arrow.png" alt=""></p>
+
+						
+							
 								<input type="hidden" name="Fascia" value="Bassa">
-							<input class="sfoglia" type="submit" id="addButton" value=" ">
+							<input class="sfoglia" type="submit" id="addButton" value="Guarda i pc di fascia* ">
+							
 							
 							
 						</form>
@@ -61,11 +64,13 @@
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
 						<form method="POST" action="vetrina.php">
-							<p class="sfoglia">Guarda la vetrina con i pc di fascia *
-								<img class="freccia" src="arrow.png" alt="">
+
+						
+							
 								<input type="hidden" name="Fascia" value="Media">
-							<input class="bottone" type="submit" id="addButton" value=" ">
-							</p>
+							<input class="sfoglia" type="submit" id="addButton" value="Guarda i pc di fascia* ">
+							
+							
 							
 						</form>
 					</div>
@@ -88,11 +93,13 @@
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
 						<form method="POST" action="vetrina.php">
-							<p class="sfoglia">Guarda la vetrina con i pc di fascia *
-								<img class="freccia" src="arrow.png" alt="">
+
+						
+							
 								<input type="hidden" name="Fascia" value="Alta">
-							<input class="bottone" type="submit" id="addButton" value=" ">
-							</p>
+							<input class="sfoglia" type="submit" id="addButton" value="Guarda i pc di fascia* ">
+							
+							
 							
 						</form>
 					</div>
@@ -101,7 +108,7 @@
 				?>
 			</div>
 
-			<br>
+			
 			<!-- tre pallini per carousel -->
 			<div style="text-align:center">
 				<span class="dot" onclick="currentSlide(1)"></span> 
