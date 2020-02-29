@@ -11,11 +11,12 @@
 }
 
 
-.maincont{
-	margin: 0 auto;
-	align-self: center;
-	width: 80%;
-	display: flex;
+.maincont {
+    margin: 0 auto;
+    align-self: center;
+    width: 80%;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
 }
 h1{
 	margin-top: 50px;
@@ -30,7 +31,7 @@ li{
 
 /*bottone per pagina comprapc*/
 button {
-    position: absolute;
+    /*position: absolute;*/
     bottom: 30%;
     right: 20%;
     font-family: 'Poppins';
@@ -115,4 +116,21 @@ img {
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+
+@media only screen and (max-width: 1024px) {
+  .sfondopc{
+  width: 100%;
+  height: initial !important;
+    background-image: url("../files/Group 5.png");
+    background-size: 100% 100%;
+    position: absolute;
+}
+.maincont {
+    margin: 0 auto;
+    align-self: center;
+    width: 80%;
+    display: inline-grid;
+    grid-template-columns: 1fr;
+}
 }

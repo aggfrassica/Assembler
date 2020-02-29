@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>PC Home</title>
 </head>
 <body>
@@ -29,7 +30,10 @@
 					
 
 				<img class="caseimg" src="data:image/png;base64,'.base64_encode($row["img"]).'" alt="immagine case">
-					<div class="cont_butt">
+					
+				</div>
+
+				<div class="cont_butt">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
@@ -45,7 +49,7 @@
 							
 						</form>
 					</div>
-				</div>
+
 			</div>';}
 
 
@@ -58,11 +62,15 @@
 				<div class="img_content">
 					
 
-					<img class="caseimg" src="data:image/png;base64,'.base64_encode($row["img"]).'" alt="immagine case">
-					<div class="cont_butt">
+				<img class="caseimg" src="data:image/png;base64,'.base64_encode($row["img"]).'" alt="immagine case">
+					
+				</div>
+
+				<div class="cont_butt">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+
 						<form method="POST" action="vetrina.php">
 
 						
@@ -74,7 +82,7 @@
 							
 						</form>
 					</div>
-				</div>
+
 			</div>';}
 
 
@@ -88,10 +96,14 @@
 					
 
 				<img class="caseimg" src="data:image/png;base64,'.base64_encode($row["img"]).'" alt="immagine case">
-					<div class="cont_butt">
+					
+				</div>
+
+				<div class="cont_butt">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+
 						<form method="POST" action="vetrina.php">
 
 						
@@ -103,7 +115,8 @@
 							
 						</form>
 					</div>
-				</div>';}
+
+			</div>';}
 				
 				?>
 			</div>
@@ -147,7 +160,7 @@
 					for (i = 0; i < dots.length; i++) {
 						dots[i].className = dots[i].className.replace(" active", "");
 					}
-					slides[slideIndex-1].style.display = "block";  
+					slides[slideIndex-1].style.display = "grid";  
 					dots[slideIndex-1].className += " active";
 				}
 			</script>			

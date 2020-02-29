@@ -1,20 +1,19 @@
-<?php session_start(); include(__DIR__.'/php/connection.php')?>;
-
+<?php session_start(); include(__DIR__.'/php/connection.php')?>
 <!DOCTYPE html>
 <html>
 <head>
-
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="stylesheet" type="text/css" href="./css/vetrina.css">
 	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>PC Home</title>
 </head>
 <body>
 	<!-- navbar -->
 	<?php include(__DIR__.'/php/navbar.php'); ?>
 	<?php if (isset($_POST["Fascia"])){
-		echo '<div class="sfondo2" style="height: 100%;">';
+		echo '<div class="sfondo2" style="height: 100%">';
 
 	}else{
 		echo '<div class="sfondo2">';

@@ -12,3 +12,20 @@
 	bottom: 22%;
 	right: 10%;
 }
+@media only screen and (max-width: 1024px) {
+  .sfondo3{
+  width: 100%;
+  /*height: initial !important;*/
+    background-image: url("../files/Group 5.png");
+    background-size: 100% 100%;
+    position: absolute;
+}
+.aboutcont {
+	padding-top: 10%;
+    width: initial !important;
+    height: 100%;
+     position: initial !important;
+    /* bottom: 22%; */
+    /* right: 10%; */
+}
+}

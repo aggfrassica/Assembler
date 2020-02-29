@@ -1,3 +1,4 @@
+
 form{
   position: absolute;
   width: 100%;
@@ -207,3 +208,20 @@ input[type=submit] {
   box-shadow: 1px 1px black;
 
 }*/
+@media only screen and (max-width: 1024px) {
+  .sfondo2{
+  width: 100%;
+  height: initial !important;
+    background-image: url("../files/Group 5.png");
+    background-size: 100% 100%;
+    position: absolute;
+}
+.inde {
+  padding: 30px;
+    width: 100%;
+    /*height: 90vh;*/
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+}
