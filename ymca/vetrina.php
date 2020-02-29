@@ -49,7 +49,7 @@
 									<div class="face face2">
 
 <form  method="POST" action="paginapc.php">
-<input type="submit" class="prezzo" value="Prezzo">
+<input type="submit" class="prezzo" value="'.$row["Prezzo"].'€">
 <input type="hidden" name="Fascia" value="'.$row["id"].'">
 </form>
 									
@@ -83,7 +83,7 @@
 									<div class="face face2">
 
 <form  method="POST" action="paginapc.php">
-<input type="submit" class="prezzo" value="Prezzo">
+<input type="submit" class="prezzo" value="'.$row["Prezzo"].'€">
 <input type="hidden" name="Fascia" value="'.$row["id"].'">
 </form>
 									

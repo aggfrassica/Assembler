@@ -84,8 +84,11 @@
 				<ul>
 					<li>'.$row["CPU"].'</li>
 					<li>'.$row["HD"].'</li>
+					<li>'.$row["RAM"].'</li>
 					<li>'.$row["Video"].'</li>
 					<li>'.$row["Motherboard"].'</li>
+					<li>'.$row["OS"].'</li>
+					<li>'.$row["Case"].'</li>
 				</ul>';
 			}
 			session_destroy();
