@@ -41,7 +41,7 @@ button {
     font-weight: 500;
     font-size: 20px;
     padding: 25px;
-    background-color: #9a0f0fcc;
+    background-color: #2d6cff;
     text-shadow: 0px -1px 16px #909090;
     text-decoration: none;
     cursor: pointer;
@@ -90,14 +90,14 @@ img {
   height: 20px;
   width: 20px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #90c3ff;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #2d6cff ;
 }
 
 /* Fading animation */
