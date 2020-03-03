@@ -20,7 +20,7 @@
 		<div class="slideshow-container">
 <?php 
 
-		$query="SELECT *from pc where Fascia = 'Bassa' and id <3";
+		$query="SELECT *from pc where Fascia = 'Bassa' and id =1";
 
 		$data=$connection->query($query);
 
@@ -53,7 +53,7 @@
 			</div>';}
 
 
-			$media="SELECT *from pc where Fascia = 'Media' and id <3";
+			$media="SELECT *from pc where Fascia = 'Media' and id=4";
 
 			$data=$connection->query($media);
 
@@ -86,7 +86,7 @@
 			</div>';}
 
 
-			$alta="SELECT *from pc where Fascia = 'Alta' and id <=3";
+			$alta="SELECT *from pc where Fascia = 'Alta' and id =7";
 
 			$data=$connection->query($alta);
 
