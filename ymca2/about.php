@@ -15,18 +15,21 @@
 	<!-- main pagina -->
 	<section class="about-main">	
 		<div class="about-img">
-			<h1>About</h1>
-			<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do <br> eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br>
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat.	
-			</h2>	
+			<h1>Seguici sui nostri social</h1>
+			<div class="icone-social">
+				<ul>
+					<li><a href="#"><img src="facebook.svg"class="social">@LivianaPC</a></li>
+					<li><a href="#"><img src="instagram.svg"class="social">@livianapc</a></li>
+					<li><a href="#"><img src="twitter.svg"class="social">@LivianaPC</a></li>
+					
+				</ul>
+			</div>		
 		</div>
 		<div class="about-form">
 			<form>
-			<h1>About</h1>
-			<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br>
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.	
+			<h1>Bisogno di aiuto?</h1>
+			<h2>Siamo felici di rispondere a ogni tua richiesta relativa agli acquisti effettuati sul nostro sito. <br>
+				Completa i campi qui sotto e contattaci!
 			</h2>
 				<div class="name-form">
 					<label for="name">Nome:</label>

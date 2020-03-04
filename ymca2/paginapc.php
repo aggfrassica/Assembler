@@ -16,8 +16,7 @@
 	
 	<!-- main pagina -->
 
-	<div class="sfondopc">
-		<div class="maincont">
+	<section id="main-pagina">
 		<div class="slideshow-containers">
 		<?php
 			$id=intval($_POST['Fascia']);
@@ -37,7 +36,7 @@
 				<div class="img_content">
 					
 
-					<img src="data:image/png;base64,'.base64_encode($row["images_Case"]).'" style="width:100%">
+					<img src="case2.jpg" style="width:100%">
 					
 				</div>
 			</div>
@@ -90,14 +89,14 @@
 			}
 			session_destroy();
 				?>
-				<button type="">Compralo su Amazon</button>
+				<a href="#">Compralo su Amazon</a>
 		</div>
 		
 		
-		</div>
+		
 		
 
-	</div>
+	</section>
 
 
 	<script>

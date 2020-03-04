@@ -17,16 +17,28 @@
   flex: 1 1 50rem;
 }
 .about-img img{
-  width: 100%;
+  padding: 0.4rem;
 }
 .about-img h1{
   padding: 2rem;
   font-size: 5rem;
 }
-.about-img h2{
-  padding: 2rem;
-  font-weight: 300;
-  font-size: 2rem;
+.icone-social{
+  display: flex;
+  flex-wrap: wrap;
+}
+.icone-social ul{
+  list-style: none;
+  flex-direction: column;
+  display: flex;
+  width: 50%;
+}
+.icone-social a{
+  display: flex;
+  text-align: center;
+}
+.social{
+  height: 4rem;
 }
 .about-form{ 
   display: flex;

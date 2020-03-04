@@ -30,8 +30,8 @@
 		<header class="descr-fascia">
 			<h1>Scegli il computer giusto per te</h1>
 			<h2>Abbiamo creato tre fasce di computer <br>
-				Bassa, Media e Alta. <br>
-				Scegli la fascia più adatta al te e guarda cosa possiamo offrire.
+				bassa, media e alta <br>
+				scegli la fascia più adatta al te e guarda cosa possiamo offrire
 			</h2>
 		</header><!-- /header -->
 	
@@ -40,7 +40,7 @@
 		<div class="slideshow-container">
 			<?php 
 
-		$query="SELECT *from pc where Fascia = 'Bassa' and id =1";
+		$query="SELECT *from pc where Fascia = 'Bassa' and id=1";
 
 		$data=$connection->query($query);
 
@@ -50,9 +50,9 @@
 						<img class="caseimg" src="data:image/png;base64,'.base64_encode($row["img"]).'" alt="immagine case">
 					</div>
 					<div class="cont_butt">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip
+						<p>Hai bisogno di un PC non troppo costoso ma vuoi comunque avere buone prestazioni?<br>
+							I nostri assemblati di fascia <strong>Bassa</strong> fanno al caso tuo!<br>
+							Scopri quale nostro assemblato fa al caso tuo.
 						</p>
 						<form method="POST" action="vetrina.php">
 							<input type="hidden" name="Fascia" value="Bassa">
@@ -109,9 +109,11 @@
 				</div>
 
 				<div class="cont_butt">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+						<p>I nostri assemblati
+							di fascia <strong>Alta</strong> sono ottimizzati per permetterti di vivere esperienze di Gaming immersive.<br>
+							Sfruttando una buona potenza grafica potrai ottenere alte prestazioni di gioco.<br>
+							Scopri quale nostro assemblato fa al caso tuo.<br>
+						</p>
 
 						<form method="POST" action="vetrina.php">
 
