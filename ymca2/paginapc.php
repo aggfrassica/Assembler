@@ -36,7 +36,7 @@
 				<div class="img_content">
 					
 
-					<img src="case2.jpg" style="width:100%">
+				<img src="data:image/png;base64,'.base64_encode($row["images_Case"]).'" style="width:100%">
 					
 				</div>
 			</div>
@@ -81,10 +81,20 @@
 			foreach($data as $row){
 				echo '<h1>'.$row["title"].'</h1>
 				<ul>
+				<li>CPU:</li>
 					<li>'.$row["CPU"].'</li>
+					<li>CPU:</li>
+					<li>'.$row["RAM"].'</li>
+					<li>CPU:</li>
 					<li>'.$row["HD"].'</li>
-					<li>'.$row["Video"].'</li>
+					<li>CPU:</li>
+					<li>'.$row["OS"].'</li>
+					<li>CPU:</li>
 					<li>'.$row["Motherboard"].'</li>
+					<li>CPU:</li>
+					<li>'.$row["Case"].'</li>
+					<li>PREZZO:</li>
+					<li>'.$row["Prezzo"].'</li>
 				</ul>';
 			}
 			session_destroy();
