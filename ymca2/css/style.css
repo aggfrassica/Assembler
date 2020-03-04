@@ -1,0 +1,237 @@
+*,
+*::before,
+*::after{
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+}
+p{
+  font-size: 2rem;
+	padding: 3rem;
+}
+a{
+  text-decoration: none;
+}
+a{
+  color: white;
+  transition: 0.4s;
+  font-size: 2rem;
+}
+a:hover{
+  text-shadow: 1px 0px 15px #54AAFF;
+}
+
+
+/*
+navbar*/
+
+
+.sopra{
+  background: #06162e;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  box-shadow: 1px 1px 10px black;
+}
+nav{
+  min-height: 10vh;
+  display: flex;
+  width: 90%;
+  padding: 2rem;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#logo{
+  font-size: 3rem;
+  flex: 2 1 40rem;
+}
+#logo span{
+  color: lightblue;
+  margin: 0;
+}
+nav ul{
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+/*
+pagina alto*/
+
+.super-top{
+  display: flex;
+  min-height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.8), transparent),url("../heroimg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.super-top h1{
+  font-size: 4rem;
+  padding: 2rem;
+}
+.super-top h2{
+  font-weight: 300;
+  font-size: 2rem;
+  padding: 2rem;
+}
+.super-top a{
+  margin-top: 5rem;
+  padding: 2rem 6rem;
+  background: #1c345c;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+
+
+/*pagina scegli fascia*/
+#scegli{
+  background: #dfdfdf;
+}
+.descr-fascia{
+  display: flex;
+  min-height: 40vh;
+  background: linear-gradient(rgba(0,0,0,0.7), transparent),#112545;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.descr-fascia h1{
+  font-size: 4rem;
+  padding: 2rem;
+}
+.descr-fascia h2{
+  font-weight: 300;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.mostra-fascia{
+  text-align: center;
+  margin-top: 4rem;
+  width: 70%;
+  min-height: 50vh;
+   
+}
+.caseimg{
+  max-width: 28rem;
+}
+
+.sfoglia{
+  padding: 2rem 4rem;
+  background: #1c345c;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+/*codice per il carousel*/
+.img_content{
+  display: flex;
+  margin: 0 auto;
+}
+.cont_butt{
+  margin: 0 auto;
+}
+.mySlides {
+  display: none;
+}
+.pallini{
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 90%;
+    
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/*
+media query per responsivet*/
+
+@media screen and (max-width: 950px){
+  /*body{
+    display: none;
+  }*/
+  html{
+    font-size: 60%;
+  }
+  nav{
+    display: flex;
+    text-align: center;
+  }
+  #logo{
+    padding: 2rem;
+
+  }
+  .mySlides{
+    flex-wrap: wrap;
+  }
+  .mostra-fascia{
+    width: 100%;
+  }
+}
+
+
+
+@media screen and (max-width: 1350px){
+  .pallini{
+    margin-top: 3em;
+  }
+  .sfoglia {
+    margin-top: 5rem;
+  }
+}
