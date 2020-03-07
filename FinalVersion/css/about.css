@@ -1,0 +1,93 @@
+.about-main{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 90vh;
+}
+.about-img{
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(rgba(0,0,0,0.85), rgba(12, 33, 64,0.4)),url("../123.jpg");
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: white;
+  flex: 1 1 50rem;
+}
+.about-img img{
+  padding: 0.4rem;
+}
+.about-img h1{
+  padding: 2rem;
+  font-size: 5rem;
+}
+.icone-social{
+  display: flex;
+  flex-wrap: wrap;
+}
+.icone-social ul{
+  list-style: none;
+  flex-direction: column;
+  display: flex;
+  width: 50%;
+}
+.icone-social a{
+  display: flex;
+  text-align: center;
+}
+.social{
+  height: 4rem;
+}
+.about-form{ 
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  background: #162a47;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 50rem;
+}
+.about-form form{
+  width: 70%;
+  padding: 2rem;
+  background: #06162e;
+}
+.about-form form h1{
+  padding: 2rem;
+  font-size: 3rem;
+}
+.about-form form h2{
+  font-weight: 300;
+  padding: 2rem;
+  font-size: 2rem;
+}
+.about-form button{
+  margin-top: 5rem;
+  padding: 1.5rem 6rem;
+  background: #1c345c;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.about-form label{
+  font-size: 2rem;
+  margin: 0rem 3rem;
+}
+.about-form input, .about-form textarea{
+  width: 100%;
+  margin: 0.5rem;
+  padding: 0.8rem 3rem;
+}
+
+/*media query*/
+@media screen and (max-width: 1024px){
+  .about-main{
+  flex-wrap: wrap;
+}
+  
+}

@@ -1,0 +1,103 @@
+#main-pagina{
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.img_content{
+  height: 32rem;
+  width: 32rem;
+
+  display: flex;
+  margin: 0 auto;
+}
+
+
+/* Slideshow container */
+.slideshow-containers {
+  background: linear-gradient(rgba(0,0,0,0.99),rgba(12, 33, 64,0.85)), url("../sfondopc.jpg");
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  flex: 1 1 40rem;
+  display: flex;
+    
+}
+.dettagli{
+  background: #efefef;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  flex: 1 1 40rem;
+  display: flex;
+}
+
+.dettagli h1 {
+  color: #244a82;
+  font-weight: 600;
+  font-size: 7rem;
+  padding: 2rem;
+}
+/*.dettagli ul{
+ 
+  list-style: none;
+}*/
+.spec{ 
+  text-align: left;
+  list-style: none; /* Remove default bullets */
+}
+.spec li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #1c2d61; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+.dettagli ul li{
+  font-weight: 300;
+  padding: 0.5rem;
+  font-size: 2.8rem;
+}
+/*bottone*/
+.dettagli a{
+  margin-top: 3rem;
+  padding: 2rem 4rem;
+  background: #1c345c;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.dettagli .prezzo{
+  text-align: left;
+/*  margin-top: 3rem;*/
+  padding: 2rem 2rem;
+  color: #3e518a;
+  border: none;
+  font-size: 6rem;
+  cursor: pointer;
+}
+.dettagli .prezzotxt{
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+.dettagli-cont{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+
+.mySlides {
+  display: none;
+}
+.pallini{
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+
